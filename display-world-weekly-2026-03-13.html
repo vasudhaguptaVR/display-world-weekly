@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Display World Weekly — March 13, 2026" />
+  <meta property="og:description" content="This week: Apple Studio Display XDR ships, Samsung Galaxy Book6 Ultra OLED, LG 2026 OLED lineup, MicroLED automotive expansion, Samsung GDC gaming monitors and more." />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="Display World Weekly edition for the week of March 9–13, 2026. Covering OLED, MicroLED, AR/VR, automotive displays, market moves and research." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display World Weekly — March 13, 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f1117; color: #e2e8f0; line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; border-radius: 8px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .masthead { background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 50%, #0d1b2a 100%); border-bottom: 2px solid #2563eb; padding: 28px 0 20px; position: sticky; top: 0; z-index: 100; }
+    .masthead-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .masthead-logo { display: flex; align-items: center; gap: 14px; }
+    .logo-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .logo-text h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; color: #fff; }
+    .logo-text span { font-size: 0.75rem; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; }
+    .masthead-meta { text-align: right; font-size: 0.8rem; color: #64748b; }
+    .masthead-meta strong { color: #94a3b8; display: block; font-size: 0.85rem; }
+    .topnav { background: #0d1b2a; border-bottom: 1px solid #1e293b; padding: 0; overflow-x: auto; white-space: nowrap; }
+    .topnav-inner { display: flex; gap: 0; }
+    .topnav a { display: inline-block; padding: 11px 18px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px; color: #64748b; border-bottom: 3px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .topnav a:hover { color: #e2e8f0; border-color: #2563eb; }
+    .hero { background: linear-gradient(160deg, #0d1b2a 0%, #1e293b 100%); padding: 52px 0 44px; border-bottom: 1px solid #1e293b; }
+    .hero-label { display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 18px; }
+    .hero h2 { font-size: 2rem; font-weight: 800; line-height: 1.25; color: #f1f5f9; max-width: 780px; margin-bottom: 16px; }
+    .hero-summary { font-size: 1rem; color: #94a3b8; max-width: 720px; margin-bottom: 22px; }
+    .hero-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
+    .hero-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 20px; transition: border-color 0.2s, transform 0.2s; }
+    .hero-card:hover { border-color: #2563eb; transform: translateY(-2px); }
+    .hero-card-source { font-size: 0.7rem; color: #2563eb; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .hero-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; margin-bottom: 10px; line-height: 1.4; }
+    .hero-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.55; margin-bottom: 12px; }
+    .hero-card ul { list-style: none; padding: 0; }
+    .hero-card ul li { font-size: 0.78rem; color: #64748b; padding: 3px 0 3px 14px; position: relative; }
+    .hero-card ul li::before { content: '▸'; position: absolute; left: 0; color: #2563eb; }
+    .read-more { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #2563eb; margin-top: 10px; }
+    .read-more:hover { color: #60a5fa; }
+    .section { padding: 48px 0 32px; border-bottom: 1px solid #1e293b; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .section-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .section-header h2 { font-size: 1.2rem; font-weight: 800; color: #f1f5f9; }
+    .section-header p { font-size: 0.78rem; color: #64748b; margin-top: 2px; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+    .card-grid.wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+    .news-card { background: #1a2233; border: 1px solid #2d3748; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; }
+    .news-card:hover { border-color: #3b82f6; box-shadow: 0 4px 20px rgba(37,99,235,0.15); }
+    .card-tag { display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; margin-bottom: 10px; width: fit-content; }
+    .tag-oled { background: #1e3a5f; color: #60a5fa; }
+    .tag-microled { background: #1a3a2a; color: #34d399; }
+    .tag-ar { background: #2d1b4e; color: #a78bfa; }
+    .tag-market { background: #3a2a0a; color: #fbbf24; }
+    .tag-product { background: #3a1a1a; color: #f87171; }
+    .tag-research { background: #1a3a3a; color: #22d3ee; }
+    .tag-auto { background: #2a2a1a; color: #d4d400; }
+    .tag-qd { background: #3a1a3a; color: #e879f9; }
+    .news-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; line-height: 1.4; margin-bottom: 10px; }
+    .card-meta { display: flex; align-items: center; gap: 8px; font-size: 0.7rem; color: #475569; margin-bottom: 10px; }
+    .card-meta .dot { width: 3px; height: 3px; background: #475569; border-radius: 50%; }
+    .news-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.6; flex: 1; margin-bottom: 14px; }
+    .key-points { list-style: none; padding: 0; margin-bottom: 14px; border-top: 1px solid #2d3748; padding-top: 12px; }
+    .key-points li { font-size: 0.77rem; color: #64748b; padding: 3px 0 3px 16px; position: relative; }
+    .key-points li::before { content: '▸'; position: absolute; left: 0; color: #3b82f6; font-size: 0.65rem; top: 5px; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+    .source-badge { font-size: 0.7rem; color: #475569; font-weight: 600; }
+    .numbers-section { background: linear-gradient(135deg, #0d1b2a, #1a2744); border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b; padding: 44px 0; }
+    .numbers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; margin-top: 24px; }
+    .number-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 22px 18px; text-align: center; }
+    .number-card .big-num { font-size: 2rem; font-weight: 900; color: #60a5fa; line-height: 1.1; margin-bottom: 6px; }
+    .number-card .num-label { font-size: 0.75rem; color: #94a3b8; line-height: 1.4; }
+    .number-card .num-context { font-size: 0.68rem; color: #475569; margin-top: 6px; }
+    .coming-up-section { padding: 44px 0; border-bottom: 1px solid #1e293b; }
+    .events-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .event-item { display: flex; align-items: flex-start; gap: 16px; background: #1a2233; border: 1px solid #2d3748; border-radius: 10px; padding: 16px 20px; }
+    .event-date { background: #2563eb; color: #fff; border-radius: 8px; padding: 6px 12px; font-size: 0.72rem; font-weight: 700; text-align: center; min-width: 80px; flex-shrink: 0; }
+    .event-info h4 { font-size: 0.9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
+    .event-info p { font-size: 0.78rem; color: #64748b; }
+    .footer { background: #0a0f1a; border-top: 1px solid #1e293b; padding: 32px 0; text-align: center; }
+    .footer p { font-size: 0.78rem; color: #475569; margin-bottom: 6px; }
+    .footer strong { color: #64748b; }
+    @media (max-width: 640px) {
+      .hero h2 { font-size: 1.4rem; }
+      .masthead-meta { display: none; }
+      .topnav a { padding: 10px 12px; font-size: 0.72rem; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- BACK TO ARCHIVE -->
+<div style="background:#0d1b2a;border-bottom:1px solid #1e293b;padding:10px 0;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#60a5fa;text-decoration:none;">
+      ← Back to 2026 Archive
+    </a>
+  </div>
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="masthead-logo">
+      <div class="logo-icon">🖥</div>
+      <div class="logo-text">
+        <h1>Display World Weekly</h1>
+        <span>The display industry, every week</span>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <strong>March 13, 2026</strong>
+      Week of Mar 9 – Mar 13, 2026
+    </div>
+  </div>
+</header>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="container topnav-inner">
+    <a href="#big-story">⚡ Big Story</a>
+    <a href="#tech-spotlight">🔬 Tech Spotlight</a>
+    <a href="#market">📈 Market Moves</a>
+    <a href="#products">🛍 Products</a>
+    <a href="#research">🧪 Research</a>
+    <a href="#automotive">🚗 Automotive</a>
+    <a href="#arvr">🥽 AR / VR / XR</a>
+    <a href="#numbers">📊 Numbers</a>
+    <a href="#coming-up">📅 Coming Up</a>
+  </div>
+</nav>
+
+<!-- HERO — THE BIG STORY -->
+<section class="hero" id="big-story">
+  <div class="container">
+    <div class="hero-label">⚡ The Big Story</div>
+    <h2>Apple Studio Display XDR Ships, Smart Glasses Surge — The Display Ecosystem Expands</h2>
+    <p class="hero-summary">
+      The week of March 9–13 brought a wave of display milestones: Apple's Studio Display XDR reached customers, smart glasses shipments doubled in H2 2025 with Meta commanding 82% of the market, and Visionox unveiled a new approach to OLED scaling at MWC 2026.
+    </p>
+    <div class="hero-cards">
+
+      <div class="hero-card">
+        <div class="hero-card-source">The Verge · Mar 11, 2026</div>
+        <h3>Apple Studio Display XDR Ships — Mini-LED, 2,000 nits, 120 Hz Now in Customers' Hands</h3>
+        <p>Apple's Studio Display XDR began shipping on March 11, bringing a 27-inch 5K mini-LED panel with 2,304 dimming zones, 2,000 nits peak HDR brightness, and 120 Hz adaptive sync to professional users for the first time.</p>
+        <ul>
+          <li>Mini-LED with 2,304 local dimming zones — significant HDR upgrade</li>
+          <li>2,000 nits peak brightness, 1,000,000:1 contrast ratio</li>
+          <li>Adaptive sync 47–120 Hz, Thunderbolt 5 connectivity</li>
+          <li>Studio Display from $1,599 · XDR from $3,299</li>
+        </ul>
+        <a class="read-more" href="https://www.theverge.com/tech/888352/apple-march-2026-event-experience-announcements-iphone-macbook-ipad" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Display Daily · Mar 9, 2026</div>
+        <h3>Smart Glasses Shipments Doubled in H2 2025 — Meta Commands 82% Market Share</h3>
+        <p>Smart glasses shipments saw a dramatic surge in the second half of 2025, doubling in volume. Meta emerged as the overwhelming market leader with 82% share, driven by new product launches that also propelled Western Europe to record shipment levels.</p>
+        <ul>
+          <li>Smart glasses shipments doubled in H2 2025</li>
+          <li>Meta holds 82% of the global smart glasses market</li>
+          <li>North America remains the largest regional market at 37%</li>
+          <li>Western Europe surged on the back of Meta's new product launches</li>
+        </ul>
+        <a class="read-more" href="https://displaydaily.com/" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Display Daily · Mar 13, 2026</div>
+        <h3>Visionox at MWC 2026: Rethinking How OLED Scales</h3>
+        <p>Chinese panel maker Visionox presented a new manufacturing philosophy at MWC 2026, focusing on scalable OLED architectures rather than peak performance. Their lithography-based pixelization approach and fourth-generation emissive material are now in production.</p>
+        <ul>
+          <li>Lithography-based pixelization — a departure from conventional FMM evaporation</li>
+          <li>Fourth-generation emissive material now in active production</li>
+          <li>Architecture-first approach targets long-term cost and yield improvements</li>
+          <li>Positions Visionox as a challenger to Samsung and LG in OLED manufacturing</li>
+        </ul>
+        <a class="read-more" href="https://displaydaily.com/" target="_blank">Read full story →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY SPOTLIGHT -->
+<section class="section" id="tech-spotlight">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e3a5f;">🔬</div>
+      <div>
+        <h2>Technology Spotlight</h2>
+        <p>Deep dives into OLED, MicroLED, and display technology advances</p>
+      </div>
+    </div>
+    <div class="card-grid wide">
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">OLED</span>
+        <h3>Samsung Adds G-SYNC Support Across Its 2026 OLED TVs and Gaming Monitors</h3>
+        <div class="card-meta"><span>Expert Magazine</span><span class="dot"></span><span>Mar 10, 2026</span></div>
+        <p>Samsung is rolling out NVIDIA G-SYNC compatibility across its entire 2026 OLED TV and Odyssey gaming monitor lineup, synchronising refresh rates with the GPU to eliminate screen tearing and reduce input lag for competitive gaming.</p>
+        <ul class="key-points">
+          <li>G-SYNC compatibility across 2026 OLED TVs and Odyssey monitors</li>
+          <li>Eliminates screen tearing, stuttering, and input lag</li>
+          <li>Combines with high refresh rates and ultra-low latency modes</li>
+          <li>Strengthens Samsung's position in the premium gaming display market</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Expert Magazine</span>
+          <a class="read-more" href="https://www.expert-magazine.org/2026/03/18/samsung-introduces-g-sync-support-across-its-2026-oled-tvs-and-gaming-monitors/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">OLED</span>
+        <h3>LG Unveils 2026 OLED Lineup — W6, G6, C6, B6 Target 5,000-nit Brightness</h3>
+        <div class="card-meta"><span>LG / Multiple</span><span class="dot"></span><span>Mar 14, 2026</span></div>
+        <p>LG's 2026 OLED TV lineup — the W6, G6, C6, and B6 series — is expected to push OLED brightness to new heights, potentially exceeding 5,000 nits, powered by a new generation of Alpha processors for superior image processing and AI-driven upscaling.</p>
+        <ul class="key-points">
+          <li>W6, G6, C6, B6 series — LG's most ambitious OLED lineup to date</li>
+          <li>New panels speculated to exceed 5,000 nits peak brightness</li>
+          <li>Next-generation Alpha processor for enhanced AI image processing</li>
+          <li>Redesigned Magic Remote with voice control and fast webOS interface</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">LG Electronics</span>
+          <a class="read-more" href="https://www.youtube.com/watch?v=G-dDyl7rF9M" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">OLED</span>
+        <h3>BOE X2 and X5 OLED Panels Confirmed for OnePlus and Oppo Flagship Smartphones</h3>
+        <div class="card-meta"><span>Multiple Sources</span><span class="dot"></span><span>Mar 9–13, 2026</span></div>
+        <p>BOE's advanced OLED panels — the 6.82-inch 2K X2 8T LTPO and the X5 1.5K — have been confirmed in leaked specifications for the OnePlus Nord 6, OnePlus 13, and Oppo Pad 5 Pro, signalling BOE's growing role as a high-end OLED supplier.</p>
+        <ul class="key-points">
+          <li>BOE X2: 6.82-inch, 2K, 120 Hz, 1,600 nits HBM, 8T LTPO</li>
+          <li>BOE X5: 1.5K OLED, 240 Hz ultra-high refresh rate</li>
+          <li>PWM+DC hybrid dimming for eye comfort</li>
+          <li>BOE challenging Samsung and LG in premium mobile OLED supply</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Multiple / Leaks</span>
+          <a class="read-more" href="https://www.notebookcheck.net/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MARKET MOVES -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a2a0a;">📈</div>
+      <div>
+        <h2>Market &amp; Industry Moves</h2>
+        <p>Partnerships, investments, supply chain, and competitive dynamics</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Geopolitics</span>
+        <h3>US–Japan $13B Display Factory Talks Continue — JDI at the Centre</h3>
+        <div class="card-meta"><span>Domain-b.com</span><span class="dot"></span><span>Mar 9, 2026</span></div>
+        <p>Negotiations between the US and Japan over a $13 billion display manufacturing facility on US soil continued this week, with Japan Display Inc. (JDI) at the centre of discussions as part of Japan's broader $550 billion US investment commitment.</p>
+        <ul class="key-points">
+          <li>Project value: ~$13 billion — one of the largest display investments ever</li>
+          <li>Part of Japan's $550B US investment package</li>
+          <li>Strategic goal: reduce Western dependence on Chinese panel makers</li>
+          <li>JDI shares surged 80% on the initial announcement</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Domain-b.com</span>
+          <a class="read-more" href="https://www.domain-b.com/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Gaming</span>
+        <h3>Samsung at GDC 2026: Glasses-Free 4K 3D, 1,040 Hz Odyssey, and HDR10+ Gaming</h3>
+        <div class="card-meta"><span>Samsung Newsroom</span><span class="dot"></span><span>Mar 19, 2026</span></div>
+        <p>At GDC 2026, Samsung showcased its most advanced gaming display technologies, including a glasses-free 4K 3D Odyssey monitor with eye-tracking, a 27-inch Odyssey G6 running at 1,040 Hz, and a 32-inch Odyssey G8 at 6K resolution.</p>
+        <ul class="key-points">
+          <li>Odyssey 3D: glasses-free 4K 3D display with advanced eye-tracking</li>
+          <li>Odyssey G6: 27-inch, 1,040 Hz — highest refresh rate gaming monitor</li>
+          <li>Odyssey G8: 32-inch, 6K resolution for ultra-sharp gaming visuals</li>
+          <li>HDR10+ GAMING certification for improved dynamic range</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Samsung Newsroom</span>
+          <a class="read-more" href="https://news.samsung.com/global/gdc-2026-how-samsung-and-global-game-studios-are-redefining-the-game-experience" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Automotive</span>
+        <h3>JDI Abandons AutoTech Subsidiary Plan — Shareholder Vote Set for June 24</h3>
+        <div class="card-meta"><span>Digitimes</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Japan Display Inc. has reversed its plan to spin off its automotive display business into a separate subsidiary. The decision, announced March 12, is still subject to shareholder approval at a meeting scheduled for June 24, 2026.</p>
+        <ul class="key-points">
+          <li>JDI cancels plan to form a dedicated AutoTech subsidiary</li>
+          <li>Automotive display business remains under the JDI umbrella</li>
+          <li>Shareholder vote on the decision: June 24, 2026</li>
+          <li>JDI continues to supply automotive OLED panels to major OEMs</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Digitimes</span>
+          <a class="read-more" href="https://www.digitimes.com/tag/automotive_display/0019581.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a1a1a;">🛍</div>
+      <div>
+        <h2>Product Launches &amp; Reviews</h2>
+        <p>New displays shipping now or coming soon</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Laptop</span>
+        <h3>MacBook Neo First Impressions — A18 Pro Chip, $500 Cheaper Than MacBook Air</h3>
+        <div class="card-meta"><span>MacRumors</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Apple's MacBook Neo launched this week, pairing an A18 Pro chip with a sharp Liquid Retina display at a price $500 below the MacBook Air. The trade-offs include no keyboard backlighting, no haptic trackpad, and no MagSafe — but the display quality remains excellent.</p>
+        <ul class="key-points">
+          <li>First Mac to use an iPhone-class A18 Pro processor</li>
+          <li>Liquid Retina display — sharp, colour-accurate, but not mini-LED</li>
+          <li>$500 cheaper than MacBook Air — targets the value segment</li>
+          <li>Lacks keyboard backlight, haptic trackpad, and MagSafe</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MacRumors</span>
+          <a class="read-more" href="https://www.macrumors.com/2026/03/13/the-macrumors-show-macbook-neo-first-impressions/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Laptop</span>
+        <h3>Samsung Galaxy Book6 Ultra — New OLED Panel Exceeds 1,000 nits for the First Time</h3>
+        <div class="card-meta"><span>NotebookCheck</span><span class="dot"></span><span>Mar 9, 2026</span></div>
+        <p>Samsung's Galaxy Book6 Ultra debuts with a new OLED panel surpassing 1,000 nits brightness — a meaningful upgrade over 2025 models. However, reviewers note that competitors with tandem OLED or mini-LED panels still hold a brightness and contrast advantage.</p>
+        <ul class="key-points">
+          <li>New OLED panel: first Galaxy Book to exceed 1,000 nits</li>
+          <li>Significant upgrade over the 2025 Galaxy Book5 Ultra display</li>
+          <li>Tandem OLED and mini-LED rivals still lead in peak brightness</li>
+          <li>Improved colour accuracy and HDR performance vs. previous generation</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">NotebookCheck</span>
+          <a class="read-more" href="https://www.notebookcheck.net/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Laptop</span>
+        <h3>Lenovo Yoga 7 OLED 2-in-1 at $699 Beats MacBook Neo on Display and RAM</h3>
+        <div class="card-meta"><span>NotebookCheck</span><span class="dot"></span><span>Mar 10, 2026</span></div>
+        <p>Best Buy's 28% discount on the Lenovo Yoga 7 Gen 10 makes it a compelling alternative to the MacBook Neo, offering an OLED display and 16 GB RAM at under $699 — superior display specs at a lower price point in the competitive mid-range laptop segment.</p>
+        <ul class="key-points">
+          <li>OLED display vs. MacBook Neo's Liquid Retina — OLED wins on contrast</li>
+          <li>16 GB RAM vs. MacBook Neo's base configuration</li>
+          <li>28% discount brings it under $699 at Best Buy</li>
+          <li>2-in-1 convertible form factor — added versatility</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">NotebookCheck</span>
+          <a class="read-more" href="https://www.notebookcheck.net/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1a3a3a;">🧪</div>
+      <div>
+        <h2>Research &amp; Innovation</h2>
+        <p>Academic papers, conference presentations, and R&amp;D breakthroughs</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-research">MicroLED</span>
+        <h3>European Supply Chain for Micro-LED Displays — ALLOS Semiconductors at electronic displays 2026</h3>
+        <div class="card-meta"><span>electronic displays Conference</span><span class="dot"></span><span>Mar 11, 2026</span></div>
+        <p>ALLOS Semiconductors presented strategies for building a robust European Micro-LED display supply chain at the electronic displays Conference 2026 in Nuremberg, highlighting the importance of localising GaN-on-Si epitaxy and wafer processing within Europe.</p>
+        <ul class="key-points">
+          <li>Focus on GaN-on-Si epitaxy for European Micro-LED production</li>
+          <li>Addresses supply chain resilience and geopolitical risk reduction</li>
+          <li>Part of the Markets &amp; Supply Chain session at electronic displays 2026</li>
+          <li>European Micro-LED ecosystem still nascent — significant investment needed</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">electronic displays Conference</span>
+          <a class="read-more" href="https://events.componeers.net/electronic-displays-conference/program" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">LCD / Mini-LED</span>
+        <h3>High Dynamic FALD LCD Using Mini-LED and LOB Technology — electronic displays 2026</h3>
+        <div class="card-meta"><span>electronic displays Conference</span><span class="dot"></span><span>Mar 11, 2026</span></div>
+        <p>Lincoln Tech Solutions presented advances in Full Array Local Dimming LCD displays at electronic displays 2026, combining Mini-LED backlights with Light-on-Board (LOB) LED technology to achieve higher contrast ratios and improved HDR performance at lower cost than OLED.</p>
+        <ul class="key-points">
+          <li>Mini-LED + LOB combination improves local dimming precision</li>
+          <li>Higher contrast ratios approaching OLED performance at LCD cost</li>
+          <li>Targets large-format commercial and professional display applications</li>
+          <li>Presented at the electronic displays Conference, Nuremberg, March 2026</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">electronic displays Conference</span>
+          <a class="read-more" href="https://events.componeers.net/electronic-displays-conference/program" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-microled">MicroLED</span>
+        <h3>Kopin Awarded US Government SBIR Phase I for Soldier-Borne MicroLED Displays</h3>
+        <div class="card-meta"><span>BusinessWire</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Kopin Corporation received a Phase I SBIR contract from the US Government to develop full-colour, compact MicroLED displays for soldier-borne applications including helmet-mounted systems and advanced weapon sights, building on its existing $15.4M IBAS contract.</p>
+        <ul class="key-points">
+          <li>Phase I SBIR for full-colour, smaller-format MicroLED displays</li>
+          <li>Applications: helmet-mounted visual systems, advanced weapon sights</li>
+          <li>Builds on existing $15.4M IBAS contract from September 2025</li>
+          <li>MicroLED's high brightness and durability critical for daylight AR waveguides</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">BusinessWire</span>
+          <a class="read-more" href="https://www.businesswire.com/news/home/20260319049652/en/Kopin-Awarded-Phase-I-SBIR-from-U.S.-Government-for-New-MicroLED-Displays-for-a-Range-of-Soldier-Borne-Applications/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMOTIVE -->
+<section class="section" id="automotive">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2a2a1a;">🚗</div>
+      <div>
+        <h2>Automotive &amp; Specialty Displays</h2>
+        <p>Dashboard OLED, HUDs, transparent displays, and in-vehicle entertainment</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">MicroLED Automotive</span>
+        <h3>MicroLED Moves Outside the Cabin — JBD, VueReal, BOE, Innolux Lead Expansion</h3>
+        <div class="card-meta"><span>Display Daily</span><span class="dot"></span><span>Mar 9, 2026</span></div>
+        <p>MicroLED technology is rapidly expanding beyond in-cabin automotive displays into exterior vehicle communication, smart mirrors, and high-luminance HUDs. JBD, VueReal, BOE, and Innolux are all introducing purpose-built MicroLED platforms for automotive use cases.</p>
+        <ul class="key-points">
+          <li>JBD Griffin: automotive-grade MicroLED projection platform for exterior vehicle communication</li>
+          <li>VueReal TrueVue: MicroLED smart mirror + next-gen brake-light modules with Flex-N-Gate</li>
+          <li>BOE: MicroLED Panoramic HUD at 300,000 nits peak brightness</li>
+          <li>LEKIN Semiconductor: $735M new facility in Suzhou for automotive MicroLED modules</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Display Daily</span>
+          <a class="read-more" href="https://displaydaily.com/microled-moves-outside-the-cabin-automotive-display-activity-picks-up-across-the-supply-chain/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">Market</span>
+        <h3>Global In-Vehicle Infotainment Market to Reach $46.98B by 2032</h3>
+        <div class="card-meta"><span>Yahoo Finance / MarkNtel</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>The global in-vehicle infotainment (IVI) market is projected to grow from $29.2 billion in 2026 to $46.98 billion by 2032, at a CAGR of 8.25%, driven by digital cockpit innovations, connected services, and the rapid adoption of Android-based IVI platforms.</p>
+        <ul class="key-points">
+          <li>Market: $29.2B (2026) → $46.98B (2032) at 8.25% CAGR</li>
+          <li>Asia-Pacific leads with ~45% of total market share in 2026</li>
+          <li>Android OS holds ~63% of IVI platform market share</li>
+          <li>Digital cockpit and multi-screen architectures driving display demand</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MarkNtel Advisors</span>
+          <a class="read-more" href="https://finance.yahoo.com/news/global-vehicle-infotainment-market-hit-080700583.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AR/VR/XR -->
+<section class="section" id="arvr">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2d1b4e;">🥽</div>
+      <div>
+        <h2>AR / VR / XR Display Watch</h2>
+        <p>Near-eye displays, waveguides, headsets, and spatial computing</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">AR Glasses</span>
+        <h3>Samsung AI Glasses: Compact Hardware, Big Android XR Platform Promise</h3>
+        <div class="card-meta"><span>Glass Almanac</span><span class="dot"></span><span>Mar 11, 2026</span></div>
+        <p>Samsung detailed its upcoming AI smart glasses on March 6, confirming a 2026 launch. The glasses combine on-device AI with a wearable UX focused on practical AR assistance — navigation, translation, and contextual information — rather than notification mirroring.</p>
+        <ul class="key-points">
+          <li>2026 launch confirmed — compact form factor prioritised</li>
+          <li>On-device AI for real-time contextual assistance</li>
+          <li>Built on Android XR platform — broad app ecosystem from launch</li>
+          <li>Positions Samsung as a direct competitor to Meta's Ray-Ban glasses</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Glass Almanac</span>
+          <a class="read-more" href="https://glassalmanac.com/7-ar-devices-in-2026-that-reveal-whats-changing-heres-why/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Privacy / AR</span>
+        <h3>Meta's Controversial Move: Facial Recognition Coming to AR Glasses in 2026</h3>
+        <div class="card-meta"><span>Glass Almanac</span><span class="dot"></span><span>Mar 11, 2026</span></div>
+        <p>Meta's plans to integrate facial recognition into its AR glasses have reignited privacy debates and drawn regulatory scrutiny in the US. The feature, disclosed in February 2026, could fundamentally change how and where users wear AR glasses in public spaces.</p>
+        <ul class="key-points">
+          <li>Facial recognition feature disclosed February 2026 — planned for 2026 launch</li>
+          <li>Sparked privacy debates and regulatory alarms in the US and EU</li>
+          <li>Could restrict use in public spaces and workplaces</li>
+          <li>Meta holds 82% of smart glasses market — this decision has outsized impact</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Glass Almanac</span>
+          <a class="read-more" href="https://glassalmanac.com/7-ar-devices-in-2026-that-reveal-whats-changing-heres-why/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Platform</span>
+        <h3>Google Android XR Gains Momentum — More Apps, Fewer Walls Between Devices</h3>
+        <div class="card-meta"><span>Glass Almanac</span><span class="dot"></span><span>Mar 11, 2026</span></div>
+        <p>Google's Android XR platform is attracting a growing developer base, encouraging more studios to build for headsets and glasses rather than proprietary platforms. The open ecosystem approach mirrors the success of Android on smartphones and could accelerate XR adoption.</p>
+        <ul class="key-points">
+          <li>Android XR developer momentum growing rapidly in early 2026</li>
+          <li>Cross-device compatibility — apps work across headsets and glasses</li>
+          <li>Reduces reliance on bespoke, platform-locked XR development</li>
+          <li>Samsung's AI glasses will launch on Android XR — key early device</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Glass Almanac</span>
+          <a class="read-more" href="https://glassalmanac.com/7-ar-devices-in-2026-that-reveal-whats-changing-heres-why/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS OF THE WEEK -->
+<section class="numbers-section" id="numbers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📊</div>
+      <div>
+        <h2>Numbers of the Week</h2>
+        <p>Key data points from the display industry this week</p>
+      </div>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-card">
+        <div class="big-num">82%</div>
+        <div class="num-label">Meta's smart glasses market share in H2 2025</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">2×</div>
+        <div class="num-label">Smart glasses shipment growth in H2 2025 vs. H1 2025</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">5,000</div>
+        <div class="num-label">Target nits brightness for LG's 2026 OLED TV lineup</div>
+        <div class="num-context">Source: LG / Multiple</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">1,040 Hz</div>
+        <div class="num-label">Samsung Odyssey G6 refresh rate — world's fastest gaming monitor</div>
+        <div class="num-context">Source: Samsung Newsroom</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">$46.98B</div>
+        <div class="num-label">In-vehicle infotainment market forecast by 2032</div>
+        <div class="num-context">Source: MarkNtel Advisors</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">300K nits</div>
+        <div class="num-label">BOE MicroLED Panoramic HUD peak brightness</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">$735M</div>
+        <div class="num-label">LEKIN Semiconductor investment in automotive MicroLED facility</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">2,304</div>
+        <div class="num-label">Local dimming zones in Apple Studio Display XDR mini-LED panel</div>
+        <div class="num-context">Source: The Verge</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMING UP -->
+<section class="coming-up-section" id="coming-up">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📅</div>
+      <div>
+        <h2>Coming Up</h2>
+        <p>Upcoming events, conferences, and product reveals in the display world</p>
+      </div>
+    </div>
+    <div class="events-list">
+      <div class="event-item">
+        <div class="event-date">Mar 20<br>2026</div>
+        <div class="event-info">
+          <h4>Display World Weekly — Edition 11</h4>
+          <p>Next edition covering the week of March 14–20, 2026</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 24<br>2026</div>
+        <div class="event-info">
+          <h4>JDI Shareholder Vote on AutoTech Decision</h4>
+          <p>Japan Display Inc. shareholders vote on the cancellation of the AutoTech subsidiary plan</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">May 18–22<br>2026</div>
+        <div class="event-info">
+          <h4>SID Display Week 2026</h4>
+          <p>The world's largest display technology conference — San Jose, CA. Expect major OLED, MicroLED, and AR/VR display announcements.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 14–20<br>2026</div>
+        <div class="event-info">
+          <h4>InfoComm 2026</h4>
+          <p>Pro AV and display technology show — Las Vegas. Large-format displays, LED walls, and professional monitor launches.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 2026</div>
+        <div class="event-info">
+          <h4>AWE USA 2026 — Augmented World Expo</h4>
+          <p>The premier AR/VR/XR industry event. Expect near-eye display announcements from Meta, Samsung, Google, and startups.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Display World Weekly</strong> — Edition 10 · March 13, 2026</p>
+    <p>Covering the week of March 9–13, 2026</p>
+    <p style="margin-top:12px;"><a href="index.html" style="color:#2563eb;font-weight:700;">← Back to 2026 Archive</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Display World Weekly — March 20, 2026" />
+  <meta property="og:description" content="This week: TCL 163-inch MicroLED TV, CEA-Leti perovskite MicroLED breakthrough, Samsung 17-year commercial display dominance, near-eye display market to $6.65B, and more." />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="Display World Weekly edition for the week of March 14–18, 2026. Covering OLED, MicroLED, AR/VR, automotive displays, market moves and research." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display World Weekly — March 20, 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f1117; color: #e2e8f0; line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; border-radius: 8px; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .masthead { background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 50%, #0d1b2a 100%); border-bottom: 2px solid #2563eb; padding: 28px 0 20px; position: sticky; top: 0; z-index: 100; }
+    .masthead-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .masthead-logo { display: flex; align-items: center; gap: 14px; }
+    .logo-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .logo-text h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; color: #fff; }
+    .logo-text span { font-size: 0.75rem; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; }
+    .masthead-meta { text-align: right; font-size: 0.8rem; color: #64748b; }
+    .masthead-meta strong { color: #94a3b8; display: block; font-size: 0.85rem; }
+    .topnav { background: #0d1b2a; border-bottom: 1px solid #1e293b; padding: 0; overflow-x: auto; white-space: nowrap; }
+    .topnav-inner { display: flex; gap: 0; }
+    .topnav a { display: inline-block; padding: 11px 18px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px; color: #64748b; border-bottom: 3px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .topnav a:hover { color: #e2e8f0; border-color: #2563eb; }
+    .hero { background: linear-gradient(160deg, #0d1b2a 0%, #1e293b 100%); padding: 52px 0 44px; border-bottom: 1px solid #1e293b; }
+    .hero-label { display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 18px; }
+    .hero h2 { font-size: 2rem; font-weight: 800; line-height: 1.25; color: #f1f5f9; max-width: 780px; margin-bottom: 16px; }
+    .hero-summary { font-size: 1rem; color: #94a3b8; max-width: 720px; margin-bottom: 22px; }
+    .hero-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
+    .hero-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 20px; transition: border-color 0.2s, transform 0.2s; }
+    .hero-card:hover { border-color: #2563eb; transform: translateY(-2px); }
+    .hero-card-source { font-size: 0.7rem; color: #2563eb; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .hero-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; margin-bottom: 10px; line-height: 1.4; }
+    .hero-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.55; margin-bottom: 12px; }
+    .hero-card ul { list-style: none; padding: 0; }
+    .hero-card ul li { font-size: 0.78rem; color: #64748b; padding: 3px 0 3px 14px; position: relative; }
+    .hero-card ul li::before { content: '▸'; position: absolute; left: 0; color: #2563eb; }
+    .read-more { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #2563eb; margin-top: 10px; }
+    .read-more:hover { color: #60a5fa; }
+    .section { padding: 48px 0 32px; border-bottom: 1px solid #1e293b; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .section-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .section-header h2 { font-size: 1.2rem; font-weight: 800; color: #f1f5f9; }
+    .section-header p { font-size: 0.78rem; color: #64748b; margin-top: 2px; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+    .card-grid.wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+    .news-card { background: #1a2233; border: 1px solid #2d3748; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; }
+    .news-card:hover { border-color: #3b82f6; box-shadow: 0 4px 20px rgba(37,99,235,0.15); }
+    .card-tag { display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; margin-bottom: 10px; width: fit-content; }
+    .tag-oled { background: #1e3a5f; color: #60a5fa; }
+    .tag-microled { background: #1a3a2a; color: #34d399; }
+    .tag-ar { background: #2d1b4e; color: #a78bfa; }
+    .tag-market { background: #3a2a0a; color: #fbbf24; }
+    .tag-product { background: #3a1a1a; color: #f87171; }
+    .tag-research { background: #1a3a3a; color: #22d3ee; }
+    .tag-auto { background: #2a2a1a; color: #d4d400; }
+    .tag-qd { background: #3a1a3a; color: #e879f9; }
+    .news-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; line-height: 1.4; margin-bottom: 10px; }
+    .card-meta { display: flex; align-items: center; gap: 8px; font-size: 0.7rem; color: #475569; margin-bottom: 10px; }
+    .card-meta .dot { width: 3px; height: 3px; background: #475569; border-radius: 50%; }
+    .news-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.6; flex: 1; margin-bottom: 14px; }
+    .key-points { list-style: none; padding: 0; margin-bottom: 14px; border-top: 1px solid #2d3748; padding-top: 12px; }
+    .key-points li { font-size: 0.77rem; color: #64748b; padding: 3px 0 3px 16px; position: relative; }
+    .key-points li::before { content: '▸'; position: absolute; left: 0; color: #3b82f6; font-size: 0.65rem; top: 5px; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+    .source-badge { font-size: 0.7rem; color: #475569; font-weight: 600; }
+    .numbers-section { background: linear-gradient(135deg, #0d1b2a, #1a2744); border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b; padding: 44px 0; }
+    .numbers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; margin-top: 24px; }
+    .number-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 22px 18px; text-align: center; }
+    .number-card .big-num { font-size: 2rem; font-weight: 900; color: #60a5fa; line-height: 1.1; margin-bottom: 6px; }
+    .number-card .num-label { font-size: 0.75rem; color: #94a3b8; line-height: 1.4; }
+    .number-card .num-context { font-size: 0.68rem; color: #475569; margin-top: 6px; }
+    .coming-up-section { padding: 44px 0; border-bottom: 1px solid #1e293b; }
+    .events-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .event-item { display: flex; align-items: flex-start; gap: 16px; background: #1a2233; border: 1px solid #2d3748; border-radius: 10px; padding: 16px 20px; }
+    .event-date { background: #2563eb; color: #fff; border-radius: 8px; padding: 6px 12px; font-size: 0.72rem; font-weight: 700; text-align: center; min-width: 80px; flex-shrink: 0; }
+    .event-info h4 { font-size: 0.9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
+    .event-info p { font-size: 0.78rem; color: #64748b; }
+    .footer { background: #0a0f1a; border-top: 1px solid #1e293b; padding: 32px 0; text-align: center; }
+    .footer p { font-size: 0.78rem; color: #475569; margin-bottom: 6px; }
+    .footer strong { color: #64748b; }
+    @media (max-width: 640px) {
+      .hero h2 { font-size: 1.4rem; }
+      .masthead-meta { display: none; }
+      .topnav a { padding: 10px 12px; font-size: 0.72rem; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- BACK TO ARCHIVE -->
+<div style="background:#0d1b2a;border-bottom:1px solid #1e293b;padding:10px 0;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#60a5fa;text-decoration:none;">
+      ← Back to 2026 Archive
+    </a>
+  </div>
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="masthead-logo">
+      <div class="logo-icon">🖥</div>
+      <div class="logo-text">
+        <h1>Display World Weekly</h1>
+        <span>The display industry, every week</span>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <strong>March 20, 2026</strong>
+      Week of Mar 14 – Mar 18, 2026
+    </div>
+  </div>
+</header>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="container topnav-inner">
+    <a href="#big-story">⚡ Big Story</a>
+    <a href="#tech-spotlight">🔬 Tech Spotlight</a>
+    <a href="#market">📈 Market Moves</a>
+    <a href="#products">🛍 Products</a>
+    <a href="#research">🧪 Research</a>
+    <a href="#automotive">🚗 Automotive</a>
+    <a href="#arvr">🥽 AR / VR / XR</a>
+    <a href="#numbers">📊 Numbers</a>
+    <a href="#coming-up">📅 Coming Up</a>
+  </div>
+</nav>
+
+<!-- HERO — THE BIG STORY -->
+<section class="hero" id="big-story">
+  <div class="container">
+    <div class="hero-label">⚡ The Big Story</div>
+    <h2>MicroLED Goes Mass Market — TCL Ships 163-inch 4K TV, Samsung Holds 17-Year Commercial Display Lead</h2>
+    <p class="hero-summary">
+      The week of March 14–18 marked a pivotal moment for MicroLED commercialisation: TCL launched two 163-inch 4K MicroLED TVs in China, CEA-Leti unveiled a perovskite color conversion breakthrough, and Samsung confirmed 17 consecutive years atop the global commercial display market with a record 35.2% share.
+    </p>
+    <div class="hero-cards">
+
+      <div class="hero-card">
+        <div class="hero-card-source">MicroLED-Info · Mar 18, 2026</div>
+        <h3>TCL Launches Two 163-inch 4K MicroLED TVs in China — Starting at $36,000</h3>
+        <p>TCL introduced the Max163M and Max163M Pro, two 163-inch 4K tiled MicroLED TVs for the Chinese market. The Max163M delivers 10,000 nits XDR brightness and 100% BT.2020 colour gamut; the Pro version adds higher brightness and a 120 Hz refresh rate.</p>
+        <ul>
+          <li>Max163M: 163-inch 4K, 10,000 nits XDR, 100% BT.2020 colour gamut</li>
+          <li>Max163M Pro: higher brightness + 120 Hz refresh rate</li>
+          <li>Tiled MicroLED panel construction — no screen-door effect</li>
+          <li>Starting price: ~$36,000 — targeting luxury residential and commercial</li>
+        </ul>
+        <a class="read-more" href="https://www.microled-info.com/tcl-launches-two-new-163-inch-4k-microled-tvs-china-starting-36000" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Samsung Newsroom · Mar 19, 2026</div>
+        <h3>Samsung Retains No. 1 Commercial Display Position for 17th Consecutive Year</h3>
+        <p>Samsung Electronics confirmed its 17th consecutive year as the global commercial display market leader, achieving a record 35.2% market share by unit sales in 2025 and shipping over 2.5 million units — an all-time annual high — across digital signage, hospitality, and enterprise segments.</p>
+        <ul>
+          <li>35.2% global commercial display market share by unit sales in 2025</li>
+          <li>Over 2.5 million units shipped — all-time annual record</li>
+          <li>New: Samsung Spatial Signage (3D content) and Color E-Paper (bio-resin housing)</li>
+          <li>AI and cloud-based display management integrated across the portfolio</li>
+        </ul>
+        <a class="read-more" href="https://news.samsung.com/global/samsung-retains-no-1-position-in-global-commercial-displays-market-for-17th-consecutive-year" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">PR Newswire · Mar 14, 2026</div>
+        <h3>ISLE 2026: AI, MicroLED, and Transparent Displays Define the New Era of Smart Signage</h3>
+        <p>ISLE 2026 concluded with a clear message: the next generation of display technology is defined by AI-driven content, COB and MicroLED fine-pitch panels, and the dissolution of physical display boundaries through transparent, holographic, and creatively shaped screens.</p>
+        <ul>
+          <li>COB and MIP emerging as core technical routes in LED display manufacturing</li>
+          <li>AI integrated across the full display chain — content, control, and interaction</li>
+          <li>Green and low-carbon development now an industry-wide consensus</li>
+          <li>Transparent, holographic, and shaped displays blurring display and architecture</li>
+        </ul>
+        <a class="read-more" href="https://finance.yahoo.com/news/isle-2026-successfully-defining-trends-080400129.html" target="_blank">Read full story →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY SPOTLIGHT -->
+<section class="section" id="tech-spotlight">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e3a5f;">🔬</div>
+      <div>
+        <h2>Technology Spotlight</h2>
+        <p>Deep dives into OLED, MicroLED, and display technology advances</p>
+      </div>
+    </div>
+    <div class="card-grid wide">
+
+      <div class="news-card">
+        <span class="card-tag tag-microled">MicroLED</span>
+        <h3>CEA-Leti Develops Sub-Micron Perovskite Color Conversion Layer for MicroLED Microdisplays</h3>
+        <div class="card-meta"><span>MicroLED-Info</span><span class="dot"></span><span>Mar 18, 2026</span></div>
+        <p>Researchers at France's CEA-Leti institute have developed green and red-emitting thin-film perovskite color conversion layers (CCLs) using pulsed laser deposition, addressing a key limitation of quantum dots in MicroLED microdisplays — their low absorption and excessive thickness at very small pixel sizes.</p>
+        <ul class="key-points">
+          <li>Pulsed laser deposition (PLD) creates ultra-thin perovskite CCLs</li>
+          <li>Overcomes QD limitations: low absorption and thickness incompatible with sub-micron pixels</li>
+          <li>Enables green and red emission from blue MicroLED arrays</li>
+          <li>Critical for ultra-high-PPI microdisplays for AR headsets and wearables</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MicroLED-Info</span>
+          <a class="read-more" href="https://www.microled-info.com/researchers-cea-leti-sub-micron-microled-perovskite-color-conversion-layer" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-microled">MicroLED</span>
+        <h3>Microsoft and MediaTek to Commercialise MicroLED Active Optical Cable Technology by 2027</h3>
+        <div class="card-meta"><span>MicroLED-Info</span><span class="dot"></span><span>Mar 18, 2026</span></div>
+        <p>MediaTek and Microsoft Research are co-developing a MicroLED-powered Active Optical Cable (AOC) solution for data centres, targeting commercialisation with industry partners by end of 2027. The technology aims to dramatically improve power efficiency in high-bandwidth interconnects.</p>
+        <ul class="key-points">
+          <li>MicroLED-based AOC for data centre high-bandwidth interconnects</li>
+          <li>Commercialisation target: end of 2027 with industry partners</li>
+          <li>Significant power efficiency gains over conventional copper and VCSEL-based AOCs</li>
+          <li>Expands MicroLED applications beyond displays into optical communications</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MicroLED-Info</span>
+          <a class="read-more" href="https://www.microled-info.com/microsoft-and-mediatek-commercialize-microled-based-active-optical-cable-technology-2027" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">OLED</span>
+        <h3>Xiaomi Book Pro 14 — 3.1K OLED, 120 Hz, 1,600 nits, Announced March 19</h3>
+        <div class="card-meta"><span>Xiaomi Community</span><span class="dot"></span><span>Mar 16, 2026</span></div>
+        <p>Xiaomi unveiled the Book Pro 14, featuring a 14.6-inch 3.1K OLED display with 120 Hz refresh rate, 1,600 nits peak brightness, professional primary colour calibration, and touch support. The laptop targets the premium thin-and-light segment with pro-grade display specifications.</p>
+        <ul class="key-points">
+          <li>14.6-inch 3.1K OLED panel — high resolution for a 14-inch class laptop</li>
+          <li>120 Hz refresh rate + 1,600 nits peak brightness</li>
+          <li>Professional primary colour calibration and touch support</li>
+          <li>Officially unveiled March 19 in China</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Xiaomi Community</span>
+          <a class="read-more" href="https://c.mi.com/global/post/2164522" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MARKET MOVES -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a2a0a;">📈</div>
+      <div>
+        <h2>Market &amp; Industry Moves</h2>
+        <p>Partnerships, investments, supply chain, and competitive dynamics</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Market Forecast</span>
+        <h3>Near-Eye Display Market to Reach $6.65B by 2030 — But Efficacy Remains the Challenge</h3>
+        <div class="card-meta"><span>Display Daily</span><span class="dot"></span><span>Mar 16, 2026</span></div>
+        <p>The near-eye display market is projected to grow from $2.17 billion in 2025 to $6.65 billion by 2030 at a 25% CAGR, driven by a maturing supply chain and clear technology segmentation. However, perceptual efficacy — particularly for fine-detail tasks and extended use — remains a significant unsolved challenge.</p>
+        <ul class="key-points">
+          <li>Market: $2.17B (2025) → $6.65B (2030) at 25% CAGR</li>
+          <li>Technology split: TFT-LCD (cost VR), Micro OLED (premium VR/MR), MicroLED/LCoS (AR)</li>
+          <li>Samsung Galaxy XR: dual 3,552×3,840 Micro OLED — competing with Vision Pro at half price</li>
+          <li>Perceptual efficacy for fine-detail and productivity tasks still lags physical monitors</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Display Daily</span>
+          <a class="read-more" href="https://displaydaily.com/near-eye-displays-in-2026-a-supply-chain-success-story-with-an-efficacy-problem/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Defence</span>
+        <h3>Kopin Secures US Government SBIR Phase I for Soldier-Borne MicroLED Displays</h3>
+        <div class="card-meta"><span>BusinessWire</span><span class="dot"></span><span>Mar 19, 2026</span></div>
+        <p>Kopin Corporation secured a Phase I SBIR contract from the US Government to develop full-colour, compact MicroLED displays for soldier-borne applications, building on its $15.4M IBAS contract. The initiative aims to strengthen the US domestic MicroLED supply chain for defence use.</p>
+        <ul class="key-points">
+          <li>Phase I SBIR for full-colour, smaller-format MicroLED displays</li>
+          <li>Applications: helmet-mounted systems, advanced weapon sights</li>
+          <li>Builds on $15.4M IBAS contract from September 2025</li>
+          <li>Strengthens US domestic MicroLED design and production capability</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">BusinessWire</span>
+          <a class="read-more" href="https://www.businesswire.com/news/home/20260319049652/en/Kopin-Awarded-Phase-I-SBIR-from-U.S.-Government-for-New-MicroLED-Displays-for-a-Range-of-Soldier-Borne-Applications/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Commercial</span>
+        <h3>Samsung Ships 2.5M Commercial Displays in 2025 — All-Time Annual Record</h3>
+        <div class="card-meta"><span>Samsung Newsroom</span><span class="dot"></span><span>Mar 19, 2026</span></div>
+        <p>Samsung's commercial display division shipped over 2.5 million units in 2025, an all-time annual record, maintaining 35.2% global market share for the 17th consecutive year. New product lines including Spatial Signage (3D content) and Color E-Paper are driving the next growth phase.</p>
+        <ul class="key-points">
+          <li>2.5M+ units shipped in 2025 — all-time annual record for Samsung Commercial Displays</li>
+          <li>35.2% global market share by unit sales</li>
+          <li>Samsung Spatial Signage: 3D content without glasses for retail and hospitality</li>
+          <li>Color E-Paper: sustainable bio-resin housing for eco-conscious deployments</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Samsung Newsroom</span>
+          <a class="read-more" href="https://news.samsung.com/global/samsung-retains-no-1-position-in-global-commercial-displays-market-for-17th-consecutive-year" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a1a1a;">🛍</div>
+      <div>
+        <h2>Product Launches &amp; Reviews</h2>
+        <p>New displays shipping now or coming soon</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-product">TV / MicroLED</span>
+        <h3>TCL Max163M MicroLED TV — 163-inch 4K, 10,000 nits, from $36,000</h3>
+        <div class="card-meta"><span>MicroLED-Info</span><span class="dot"></span><span>Mar 18, 2026</span></div>
+        <p>TCL's Max163M and Max163M Pro bring 163-inch 4K MicroLED to the Chinese consumer market, with the base model offering 10,000 nits XDR brightness and the Pro adding 120 Hz. Both use tiled MicroLED construction for seamless, ultra-large display surfaces.</p>
+        <ul class="key-points">
+          <li>163-inch 4K tiled MicroLED — no visible seams</li>
+          <li>10,000 nits XDR brightness — 5× brighter than most OLED TVs</li>
+          <li>100% BT.2020 colour gamut coverage</li>
+          <li>Starting at ~$36,000 in China</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MicroLED-Info</span>
+          <a class="read-more" href="https://www.microled-info.com/tcl-launches-two-new-163-inch-4k-microled-tvs-china-starting-36000" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Smartphone</span>
+        <h3>Samsung Galaxy S26 Ultra Wins GLOMO 'Best in Show' — Features World's First Built-in Privacy Display</h3>
+        <div class="card-meta"><span>Samsung Newsroom</span><span class="dot"></span><span>Mar 14, 2026</span></div>
+        <p>The Samsung Galaxy S26 Ultra was awarded 'Best in Show' at the Global Mobile Awards (GLOMO) at MWC 2026, recognised for its world's first built-in Privacy Display, Galaxy AI integration, and a customised chipset delivering faster on-device AI performance.</p>
+        <ul class="key-points">
+          <li>World's first built-in Privacy Display — no clip-on filter needed</li>
+          <li>Galaxy AI: adaptive, context-aware intelligence with privacy protection</li>
+          <li>Customised chipset for faster on-device AI processing</li>
+          <li>GLOMO 'Best in Show' at MWC 2026 — industry's top mobile award</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Samsung Newsroom</span>
+          <a class="read-more" href="https://news.samsung.com/my/samsung-galaxy-s26-ultra-awarded-best-in-show-at-the-global-mobile-awards-at-mobile-world-congress-2026" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Laptop</span>
+        <h3>Xiaomi Book Pro 14 — 3.1K OLED Laptop Unveiled for Chinese Market</h3>
+        <div class="card-meta"><span>Xiaomi Community</span><span class="dot"></span><span>Mar 16, 2026</span></div>
+        <p>Xiaomi's Book Pro 14 was officially unveiled on March 19 in China, featuring a 14.6-inch 3.1K OLED display with 120 Hz, 1,600 nits peak brightness, and professional colour calibration. It enters a competitive premium laptop segment alongside the MacBook Pro and Dell XPS.</p>
+        <ul class="key-points">
+          <li>14.6-inch 3.1K OLED — 120 Hz, 1,600 nits, touch-enabled</li>
+          <li>Professional primary colour calibration for creative professionals</li>
+          <li>Targets MacBook Pro and Dell XPS in the premium thin-and-light segment</li>
+          <li>Unveiled March 19 in China — global availability TBC</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Xiaomi Community</span>
+          <a class="read-more" href="https://c.mi.com/global/post/2164522" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1a3a3a;">🧪</div>
+      <div>
+        <h2>Research &amp; Innovation</h2>
+        <p>Academic papers, conference presentations, and R&amp;D breakthroughs</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-research">MicroLED</span>
+        <h3>Sub-Micron Perovskite CCL — CEA-Leti Solves a Key MicroLED Colour Conversion Problem</h3>
+        <div class="card-meta"><span>CEA-Leti / MicroLED-Info</span><span class="dot"></span><span>Mar 18, 2026</span></div>
+        <p>CEA-Leti's pulsed laser deposition technique produces perovskite colour conversion layers thin enough for sub-micron MicroLED pixels — a breakthrough that could enable full-colour MicroLED microdisplays at pixel pitches below 1 μm, critical for next-generation AR headsets.</p>
+        <ul class="key-points">
+          <li>Sub-micron perovskite CCL — compatible with &lt;1 μm pixel pitch MicroLEDs</li>
+          <li>Pulsed laser deposition enables precise thickness control</li>
+          <li>Addresses QD limitations: absorption depth and minimum thickness constraints</li>
+          <li>Enables full-colour MicroLED arrays for ultra-high-PPI AR microdisplays</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">CEA-Leti</span>
+          <a class="read-more" href="https://www.microled-info.com/researchers-cea-leti-sub-micron-microled-perovskite-color-conversion-layer" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">OLED</span>
+        <h3>Optimising OLED Performance on Polyimide Substrates — ITO and Encapsulation Study</h3>
+        <div class="card-meta"><span>ETRI Journal / Fluxim</span><span class="dot"></span><span>Mar 2026</span></div>
+        <p>A new study evaluates the impact of ITO and organic layer thicknesses, as well as encapsulation materials, on OLED performance on flexible polyimide substrates — providing practical guidance for manufacturers optimising flexible OLED panel yield and lifetime.</p>
+        <ul class="key-points">
+          <li>Evaluates ITO layer thickness effects on flexible OLED efficiency and lifetime</li>
+          <li>Compares encapsulation material options for moisture and oxygen barrier performance</li>
+          <li>Practical guidelines for flexible OLED manufacturing process optimisation</li>
+          <li>Relevant to foldable smartphone and wearable display production</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">ETRI Journal</span>
+          <a class="read-more" href="https://www.fluxim.com/publications-overview" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">AR / MicroLED</span>
+        <h3>Meta Project Orion: MicroLED + Silicon Carbide Waveguides — Post-2027 Launch Expected</h3>
+        <div class="card-meta"><span>The Elec</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Meta's Project Orion AR glasses, featuring MicroLED-based optical technology and silicon-carbide waveguides, are expected to launch after 2027. The silicon carbide waveguide approach offers superior optical efficiency and durability compared to conventional glass waveguides.</p>
+        <ul class="key-points">
+          <li>MicroLED light engine — high brightness for outdoor AR use</li>
+          <li>Silicon carbide (SiC) waveguides — superior efficiency vs. glass alternatives</li>
+          <li>Post-2027 launch timeline — still in advanced R&amp;D phase</li>
+          <li>Represents Meta's long-term bet on true AR glasses beyond Ray-Ban smart glasses</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">The Elec</span>
+          <a class="read-more" href="https://www.thelec.net/news/articleView.html?idxno=5793" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMOTIVE -->
+<section class="section" id="automotive">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2a2a1a;">🚗</div>
+      <div>
+        <h2>Automotive &amp; Specialty Displays</h2>
+        <p>Dashboard OLED, HUDs, transparent displays, and in-vehicle entertainment</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">OLED Automotive</span>
+        <h3>2026 Audi A6 Quattro — Three OLED Displays, Digital Animated Headlights</h3>
+        <div class="card-meta"><span>AOL / Men's Journal</span><span class="dot"></span><span>Mar 2026</span></div>
+        <p>The 2026 Audi A6 Quattro integrates a full OLED digital cockpit: an 11.9-inch Virtual Cockpit Plus, a 14.5-inch MMI touch display, and an optional 10.9-inch passenger display. Digital OLED animated headlights and taillights complete the display-forward interior and exterior design.</p>
+        <ul class="key-points">
+          <li>11.9-inch Audi Virtual Cockpit Plus (OLED) — driver instrument cluster</li>
+          <li>14.5-inch MMI touch display (OLED) — centre console</li>
+          <li>Optional 10.9-inch MMI passenger display for games and streaming</li>
+          <li>Digital OLED animated headlights and taillights — display technology goes exterior</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">AOL / Men's Journal</span>
+          <a class="read-more" href="https://www.aol.com/articles/2026-audi-a6-quattro-enhanced-002554971.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">HUD</span>
+        <h3>2026 Chevrolet Silverado EV TrailBoss Features Adjustable Heads-Up Display</h3>
+        <div class="card-meta"><span>Multiple</span><span class="dot"></span><span>Mar 16, 2026</span></div>
+        <p>The 2026 Chevrolet Silverado EV TrailBoss includes an adjustable HUD system, allowing drivers to customise display position and content for optimal visibility. The feature reflects the growing standardisation of HUD technology across the full vehicle price spectrum, from luxury to mainstream.</p>
+        <ul class="key-points">
+          <li>Adjustable HUD — customisable position and content display</li>
+          <li>Available on a mainstream EV pickup — HUD democratisation continues</li>
+          <li>Complements the Silverado EV's large central touchscreen</li>
+          <li>Reflects automotive industry trend of HUD as standard, not premium, feature</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Multiple</span>
+          <a class="read-more" href="https://www.tiktok.com/discover/how-to-turn-on-2026-chevy-silverado-heads-up-display" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AR/VR/XR -->
+<section class="section" id="arvr">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2d1b4e;">🥽</div>
+      <div>
+        <h2>AR / VR / XR Display Watch</h2>
+        <p>Near-eye displays, waveguides, headsets, and spatial computing</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Platform</span>
+        <h3>Xreal Project Aura at MWC 2026 — Sony Micro-OLED, 70° FOV, Google Android XR</h3>
+        <div class="card-meta"><span>The Elec</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Xreal showcased Project Aura at MWC 2026 — an Android XR-based AR prototype featuring Sony's micro-OLED display, Xreal's optical engine, and a 70-degree field of view using prism lenses. The dual-chip architecture combines Qualcomm's Snapdragon XR2+ Gen 2 with Xreal's X1S spatial-computing chip.</p>
+        <ul class="key-points">
+          <li>Sony micro-OLED display — high brightness and contrast for AR overlay</li>
+          <li>70-degree FOV with prism lenses — wider than most current AR glasses</li>
+          <li>Dual-chip: Snapdragon XR2+ Gen 2 + Xreal X1S spatial-computing chip</li>
+          <li>Built on Google Android XR — broad app ecosystem from day one</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">The Elec</span>
+          <a class="read-more" href="https://www.thelec.net/news/articleView.html?idxno=5793" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Market</span>
+        <h3>AI Glasses' Real Battle Starts in 2028 — 2026 Is Just the Opening Skirmish</h3>
+        <div class="card-meta"><span>The Elec</span><span class="dot"></span><span>Mar 13, 2026</span></div>
+        <p>Industry analysts argue that while 2026 will see a wave of AI glasses launches from Samsung, Google, Meta, and Xreal, the true competitive battle for the AR glasses market will not begin until 2028, when MicroLED optics, silicon carbide waveguides, and on-device AI mature simultaneously.</p>
+        <ul class="key-points">
+          <li>2026 launches (Samsung, Google, Xreal) are first-generation — display tech still limited</li>
+          <li>Meta Project Orion (MicroLED + SiC waveguide) expected post-2027</li>
+          <li>True AR glasses require MicroLED brightness + efficient waveguide optics</li>
+          <li>2028 is the projected inflection point for mass-market AR glasses adoption</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">The Elec</span>
+          <a class="read-more" href="https://www.thelec.net/news/articleView.html?idxno=5793" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Platform</span>
+        <h3>Google Android XR: Compound LightGuide Optics and Cross-Device App Strategy</h3>
+        <div class="card-meta"><span>KGOnTech</span><span class="dot"></span><span>Mar 9, 2026</span></div>
+        <p>Google's Android XR strategy combines its Compound LightGuide (CLG) optics with a cross-device app ecosystem, enabling the same applications to run on VR headsets and AR glasses. The CLG approach offers a more compact and efficient waveguide design than conventional stacked waveguides.</p>
+        <ul class="key-points">
+          <li>Compound LightGuide (CLG) — Google's proprietary waveguide optic for AR glasses</li>
+          <li>Cross-device apps: same Android XR app runs on headsets and glasses</li>
+          <li>Collaboration with Xreal on Project Aura — first CLG-based device</li>
+          <li>Display-less and display-equipped AI glasses variants in development</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">KGOnTech</span>
+          <a class="read-more" href="https://kguttag.com/2026/03/09/ces-ar-vr-mr-2026-quick-takeaways-part-1-android-google-xr-and-meta/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS OF THE WEEK -->
+<section class="numbers-section" id="numbers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📊</div>
+      <div>
+        <h2>Numbers of the Week</h2>
+        <p>Key data points from the display industry this week</p>
+      </div>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-card">
+        <div class="big-num">$6.65B</div>
+        <div class="num-label">Near-eye display market forecast by 2030</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">25%</div>
+        <div class="num-label">CAGR of near-eye display market 2025–2030</div>
+        <div class="num-context">Source: Display Daily</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">10,000 nits</div>
+        <div class="num-label">TCL Max163M MicroLED TV peak XDR brightness</div>
+        <div class="num-context">Source: MicroLED-Info</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">163"</div>
+        <div class="num-label">TCL Max163M MicroLED TV screen size</div>
+        <div class="num-context">Source: MicroLED-Info</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">35.2%</div>
+        <div class="num-label">Samsung global commercial display market share in 2025</div>
+        <div class="num-context">Source: Samsung Newsroom</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">17 years</div>
+        <div class="num-label">Samsung's consecutive years as No. 1 commercial display maker</div>
+        <div class="num-context">Source: Samsung Newsroom</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">70°</div>
+        <div class="num-label">Xreal Project Aura field of view with Sony micro-OLED</div>
+        <div class="num-context">Source: The Elec</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">2028</div>
+        <div class="num-label">Projected year for true AR glasses competitive inflection point</div>
+        <div class="num-context">Source: The Elec</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMING UP -->
+<section class="coming-up-section" id="coming-up">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📅</div>
+      <div>
+        <h2>Coming Up</h2>
+        <p>Upcoming events, conferences, and product reveals in the display world</p>
+      </div>
+    </div>
+    <div class="events-list">
+      <div class="event-item">
+        <div class="event-date">Mar 27<br>2026</div>
+        <div class="event-info">
+          <h4>Display World Weekly — Edition 12</h4>
+          <p>Next edition covering the week of March 21–27, 2026</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">May 18–22<br>2026</div>
+        <div class="event-info">
+          <h4>SID Display Week 2026</h4>
+          <p>The world's largest display technology conference — San Jose, CA. Expect major OLED, MicroLED, and AR/VR display announcements from all leading panel makers.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 14–20<br>2026</div>
+        <div class="event-info">
+          <h4>InfoComm 2026</h4>
+          <p>Pro AV and display technology show — Las Vegas. Large-format displays, LED walls, and professional monitor launches.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 24<br>2026</div>
+        <div class="event-info">
+          <h4>JDI Shareholder Vote — AutoTech Decision</h4>
+          <p>Japan Display Inc. shareholders vote on the cancellation of the AutoTech automotive display subsidiary plan.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Post-2027</div>
+        <div class="event-info">
+          <h4>Meta Project Orion AR Glasses Launch</h4>
+          <p>Meta's true AR glasses featuring MicroLED optics and silicon carbide waveguides — the most anticipated display product in the AR pipeline.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Display World Weekly</strong> — Edition 11 · March 20, 2026</p>
+    <p>Covering the week of March 14–18, 2026</p>
+    <p style="margin-top:12px;"><a href="index.html" style="color:#2563eb;font-weight:700;">← Back to 2026 Archive</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
