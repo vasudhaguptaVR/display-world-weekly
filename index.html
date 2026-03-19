@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Display World Weekly — 2026 Archive" />
+  <meta property="og:description" content="Weekly newsletter covering OLED, MicroLED, AR/VR, automotive displays, market moves and research." />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Display World Weekly — 2026 full year archive. Covering OLED, MicroLED, Quantum Dot, AR/VR, automotive displays, market intelligence and research highlights." />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display World Weekly — 2026 Archive</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Masthead ── */
+    .masthead {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 50%, #0d1b2a 100%);
+      border-bottom: 2px solid #2563eb;
+      padding: 32px 0 24px;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .masthead-inner {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .logo { display: flex; align-items: center; gap: 14px; }
+    .logo-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .logo h1 { font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { font-size: 0.75rem; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; display: block; margin-top: 2px; }
+    .masthead-badge {
+      background: #1e293b;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      padding: 10px 18px;
+      text-align: right;
+    }
+    .masthead-badge strong { display: block; font-size: 1rem; color: #60a5fa; font-weight: 800; }
+    .masthead-badge span { font-size: 0.75rem; color: #64748b; }
+
+    /* ── Stats Bar ── */
+    .stats-bar {
+      background: #0d1b2a;
+      border-bottom: 1px solid #1e293b;
+      padding: 14px 0;
+    }
+    .stats-inner {
+      display: flex; gap: 32px; flex-wrap: wrap;
+    }
+    .stat { display: flex; align-items: center; gap: 8px; }
+    .stat-num { font-size: 1.1rem; font-weight: 800; color: #60a5fa; }
+    .stat-label { font-size: 0.75rem; color: #64748b; }
+
+    /* ── Quarter Headers ── */
+    .quarter-section { padding: 36px 0 8px; }
+    .quarter-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
+    }
+    .quarter-pill {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+    }
+    .quarter-header h2 { font-size: 1.05rem; font-weight: 700; color: #94a3b8; }
+
+    /* ── Edition Grid ── */
+    .edition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Edition Card ── */
+    .edition-card {
+      border-radius: 10px;
+      padding: 16px 18px;
+      border: 1px solid #2d3748;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .edition-card.published {
+      background: #1a2233;
+      cursor: pointer;
+    }
+    .edition-card.published:hover {
+      border-color: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(37,99,235,0.15);
+    }
+    .edition-card.upcoming {
+      background: #111827;
+      opacity: 0.45;
+    }
+    .edition-card.current {
+      background: #1a2233;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 1px #2563eb, 0 4px 20px rgba(37,99,235,0.2);
+    }
+    .edition-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .edition-date {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 4px;
+    }
+    .edition-card.upcoming .edition-date { color: #475569; }
+    .edition-range {
+      font-size: 0.72rem;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+    .edition-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+    .status-published { background: #1a3a2a; color: #34d399; }
+    .status-current   { background: #1e3a5f; color: #60a5fa; }
+    .status-upcoming  { background: #1e293b; color: #475569; }
+    .edition-card a.card-link {
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex; gap: 20px; flex-wrap: wrap;
+      padding: 20px 0 8px;
+      border-top: 1px solid #1e293b;
+      margin-top: 32px;
+    }
+    .legend-item { display: flex; align-items: center; gap: 7px; font-size: 0.75rem; color: #64748b; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-published { background: #34d399; }
+    .dot-current   { background: #60a5fa; }
+    .dot-upcoming  { background: #2d3748; }
+
+    /* ── Footer ── */
+    .footer {
+      background: #0a0f1a;
+      border-top: 1px solid #1e293b;
+      padding: 28px 0;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .footer p { font-size: 0.78rem; color: #475569; margin-bottom: 4px; }
+    .footer strong { color: #64748b; }
+
+    /* ── How to Use Box ── */
+    .how-to-box {
+      background: #1a2233;
+      border: 1px solid #2d3748;
+      border-left: 3px solid #2563eb;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 28px 0 0;
+    }
+    .how-to-box h3 { font-size: 0.9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 10px; }
+    .how-to-box ol { padding-left: 18px; }
+    .how-to-box li { font-size: 0.8rem; color: #94a3b8; margin-bottom: 6px; line-height: 1.5; }
+    .how-to-box li strong { color: #60a5fa; }
+
+    @media (max-width: 600px) {
+      .edition-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-inner { gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ══ GOOGLE DRIVE SETUP BANNER (remove after setup) ══ -->
+  <div id="drive-banner" style="background:#1a3a2a;border-bottom:2px solid #34d399;
+       padding:14px 0;position:sticky;top:0;z-index:200;">
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;
+                display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+      <div>
+        <span style="font-size:13px;font-weight:700;color:#34d399;">📁 Google Drive Setup</span>
+        <span style="font-size:12px;color:#94a3b8;margin-left:10px;">
+          Upload all HTML files to the same Drive folder → Share folder → Bookmark this index link.
+          Edition links work automatically when all files are in the same folder.
+        </span>
+      </div>
+      <button onclick="document.getElementById('drive-banner').style.display='none'"
+              style="background:#0d2a1a;border:1px solid #34d399;color:#34d399;
+                     font-size:11px;font-weight:700;padding:5px 12px;border-radius:6px;
+                     cursor:pointer;">Dismiss</button>
+    </div>
+  </div>
+  <!-- ══ END DRIVE BANNER ══ -->
+
+
+<!-- ══════════════════════════════════════════
+     MASTHEAD
+══════════════════════════════════════════ -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="logo">
+      <div class="logo-icon">🖥</div>
+      <div>
+        <h1>Display World Weekly</h1>
+        <span>2026 Edition Archive</span>
+      </div>
+    </div>
+    <div class="masthead-badge">
+      <strong>2026</strong>
+      <span>Full Year Archive</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     STATS BAR
+══════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="container stats-inner">
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label">Editions published</span></div>
+    <div class="stat"><span class="stat-num">51</span><span class="stat-label">Editions upcoming</span></div>
+    <div class="stat"><span class="stat-num">52</span><span class="stat-label">Total 2026 editions</span></div>
+    <div class="stat"><span class="stat-num">Every Friday</span><span class="stat-label">Delivery schedule</span></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- How to Use -->
+  <div class="how-to-box">
+    <h3>📁 How to use this archive in Google Drive</h3>
+    <ol>
+      <li>Save this file as <strong>display-world-weekly-2026-index.html</strong> in your Drive folder.</li>
+      <li>Each Friday, save the new weekly edition HTML (e.g. <strong>display-world-weekly-2026-03-13.html</strong>) into the same folder.</li>
+      <li>Open this index file from Drive — all published edition links will work automatically as long as the files are in the same folder.</li>
+      <li>Replace this index file with the updated version attached to each Friday's email to keep the archive current.</li>
+    </ol>
+  </div>
+
+  <!-- ── Q1 ── -->
+  <div class="quarter-section">
+    <div class="quarter-header">
+      <span class="quarter-pill">Q1</span>
+      <h2>January – March 2026</h2>
+    </div>
+    <div class="edition-grid">
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 01</div>
+        <div class="edition-date">Jan 9, 2026</div>
+        <div class="edition-range">Jan 3 – Jan 9</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 02</div>
+        <div class="edition-date">Jan 16, 2026</div>
+        <div class="edition-range">Jan 10 – Jan 16</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 03</div>
+        <div class="edition-date">Jan 23, 2026</div>
+        <div class="edition-range">Jan 17 – Jan 23</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 04</div>
+        <div class="edition-date">Jan 30, 2026</div>
+        <div class="edition-range">Jan 24 – Jan 30</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 05</div>
+        <div class="edition-date">Feb 6, 2026</div>
+        <div class="edition-range">Jan 31 – Feb 6</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 06</div>
+        <div class="edition-date">Feb 13, 2026</div>
+        <div class="edition-range">Feb 7 – Feb 13</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 07</div>
+        <div class="edition-date">Feb 20, 2026</div>
+        <div class="edition-range">Feb 14 – Feb 20</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 08</div>
+        <div class="edition-date">Feb 27, 2026</div>
+        <div class="edition-range">Feb 21 – Feb 27</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card current" id="edition-09">
+        <div class="edition-num">Edition 09</div>
+        <div class="edition-date">Mar 8, 2026</div>
+        <div class="edition-range">Mar 2 – Mar 8</div>
+        <span class="edition-status status-current">⬤ Latest</span>
+        <a class="card-link" href="display-world-weekly-2026-03-08.html" title="Open Edition 09 — Mar 8, 2026"></a>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 10</div>
+        <div class="edition-date">Mar 13, 2026</div>
+        <div class="edition-range">Mar 9 – Mar 13</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 11</div>
+        <div class="edition-date">Mar 20, 2026</div>
+        <div class="edition-range">Mar 14 – Mar 20</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+      <div class="edition-card upcoming">
+        <div class="edition-num">Edition 12</div>
+        <div class="edition-date">Mar 27, 2026</div>
+        <div class="edition-range">Mar 21 – Mar 27</div>
+        <span class="edition-status status-upcoming">⬤ Upcoming</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Q2 ── -->
+  <div class="quarter-section">
+    <div class="quarter-header">
+      <span class="quarter-pill">Q2</span>
+      <h2>April – June 2026</h2>
+    </div>
+    <div class="edition-grid">
+      <div class="edition-card upcoming"><div class="edition-num">Edition 13</div><div class="edition-date">Apr 3, 2026</div><div class="edition-range">Mar 28 – Apr 3</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 14</div><div class="edition-date">Apr 10, 2026</div><div class="edition-range">Apr 4 – Apr 10</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 15</div><div class="edition-date">Apr 17, 2026</div><div class="edition-range">Apr 11 – Apr 17</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 16</div><div class="edition-date">Apr 24, 2026</div><div class="edition-range">Apr 18 – Apr 24</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 17</div><div class="edition-date">May 1, 2026</div><div class="edition-range">Apr 25 – May 1</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 18</div><div class="edition-date">May 8, 2026</div><div class="edition-range">May 2 – May 8</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 19</div><div class="edition-date">May 15, 2026</div><div class="edition-range">May 9 – May 15</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 20</div><div class="edition-date">May 22, 2026</div><div class="edition-range">May 16 – May 22</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 21</div><div class="edition-date">May 29, 2026</div><div class="edition-range">May 23 – May 29</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 22</div><div class="edition-date">Jun 5, 2026</div><div class="edition-range">May 30 – Jun 5</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 23</div><div class="edition-date">Jun 12, 2026</div><div class="edition-range">Jun 6 – Jun 12</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 24</div><div class="edition-date">Jun 19, 2026</div><div class="edition-range">Jun 13 – Jun 19</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 25</div><div class="edition-date">Jun 26, 2026</div><div class="edition-range">Jun 20 – Jun 26</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+    </div>
+  </div>
+
+  <!-- ── Q3 ── -->
+  <div class="quarter-section">
+    <div class="quarter-header">
+      <span class="quarter-pill">Q3</span>
+      <h2>July – September 2026</h2>
+    </div>
+    <div class="edition-grid">
+      <div class="edition-card upcoming"><div class="edition-num">Edition 26</div><div class="edition-date">Jul 3, 2026</div><div class="edition-range">Jun 27 – Jul 3</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 27</div><div class="edition-date">Jul 10, 2026</div><div class="edition-range">Jul 4 – Jul 10</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 28</div><div class="edition-date">Jul 17, 2026</div><div class="edition-range">Jul 11 – Jul 17</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 29</div><div class="edition-date">Jul 24, 2026</div><div class="edition-range">Jul 18 – Jul 24</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 30</div><div class="edition-date">Jul 31, 2026</div><div class="edition-range">Jul 25 – Jul 31</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 31</div><div class="edition-date">Aug 7, 2026</div><div class="edition-range">Aug 1 – Aug 7</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 32</div><div class="edition-date">Aug 14, 2026</div><div class="edition-range">Aug 8 – Aug 14</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 33</div><div class="edition-date">Aug 21, 2026</div><div class="edition-range">Aug 15 – Aug 21</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 34</div><div class="edition-date">Aug 28, 2026</div><div class="edition-range">Aug 22 – Aug 28</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 35</div><div class="edition-date">Sep 4, 2026</div><div class="edition-range">Aug 29 – Sep 4</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 36</div><div class="edition-date">Sep 11, 2026</div><div class="edition-range">Sep 5 – Sep 11</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 37</div><div class="edition-date">Sep 18, 2026</div><div class="edition-range">Sep 12 – Sep 18</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 38</div><div class="edition-date">Sep 25, 2026</div><div class="edition-range">Sep 19 – Sep 25</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+    </div>
+  </div>
+
+  <!-- ── Q4 ── -->
+  <div class="quarter-section">
+    <div class="quarter-header">
+      <span class="quarter-pill">Q4</span>
+      <h2>October – December 2026</h2>
+    </div>
+    <div class="edition-grid">
+      <div class="edition-card upcoming"><div class="edition-num">Edition 39</div><div class="edition-date">Oct 2, 2026</div><div class="edition-range">Sep 26 – Oct 2</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 40</div><div class="edition-date">Oct 9, 2026</div><div class="edition-range">Oct 3 – Oct 9</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 41</div><div class="edition-date">Oct 16, 2026</div><div class="edition-range">Oct 10 – Oct 16</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 42</div><div class="edition-date">Oct 23, 2026</div><div class="edition-range">Oct 17 – Oct 23</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 43</div><div class="edition-date">Oct 30, 2026</div><div class="edition-range">Oct 24 – Oct 30</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 44</div><div class="edition-date">Nov 6, 2026</div><div class="edition-range">Oct 31 – Nov 6</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 45</div><div class="edition-date">Nov 13, 2026</div><div class="edition-range">Nov 7 – Nov 13</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 46</div><div class="edition-date">Nov 20, 2026</div><div class="edition-range">Nov 14 – Nov 20</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 47</div><div class="edition-date">Nov 27, 2026</div><div class="edition-range">Nov 21 – Nov 27</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 48</div><div class="edition-date">Dec 4, 2026</div><div class="edition-range">Nov 28 – Dec 4</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 49</div><div class="edition-date">Dec 11, 2026</div><div class="edition-range">Dec 5 – Dec 11</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 50</div><div class="edition-date">Dec 18, 2026</div><div class="edition-range">Dec 12 – Dec 18</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+      <div class="edition-card upcoming"><div class="edition-num">Edition 51</div><div class="edition-date">Dec 25, 2026</div><div class="edition-range">Dec 19 – Dec 25</div><span class="edition-status status-upcoming">⬤ Upcoming</span></div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot dot-current"></div> Latest edition</div>
+    <div class="legend-item"><div class="legend-dot dot-published"></div> Published — click to open</div>
+    <div class="legend-item"><div class="legend-dot dot-upcoming"></div> Upcoming</div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Display World Weekly — 2026 Archive</strong></p>
+    <p>Delivered every Friday · vasudhagupta@meta.com · All editions in this folder link automatically</p>
+    <p style="margin-top:10px; font-size:0.7rem; color:#374151;">
+      To update: replace this index file with the new version attached to each Friday's email.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Display World Weekly — March 8, 2026" />
+  <meta property="og:description" content="This week: Samsung 5000 PPI OLEDoS, Pico Project Swan micro-OLED, Apple Studio Display XDR, US-Japan $13B display factory deal and more." />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="Display World Weekly edition for the week of March 2–8, 2026. Covering OLED, MicroLED, AR/VR, automotive displays, market moves and research." />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display World Weekly — March 8, 2026</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; border-radius: 8px; }
+
+    /* ── Layout ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* ── Masthead ── */
+    .masthead {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 50%, #0d1b2a 100%);
+      border-bottom: 2px solid #2563eb;
+      padding: 28px 0 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .masthead-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-icon {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .logo-text h1 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+    .logo-text span {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .masthead-meta {
+      text-align: right;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    .masthead-meta strong { color: #94a3b8; display: block; font-size: 0.85rem; }
+
+    /* ── Top Nav ── */
+    .topnav {
+      background: #0d1b2a;
+      border-bottom: 1px solid #1e293b;
+      padding: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .topnav-inner {
+      display: flex;
+      gap: 0;
+    }
+    .topnav a {
+      display: inline-block;
+      padding: 11px 18px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #64748b;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .topnav a:hover { color: #e2e8f0; border-color: #2563eb; }
+
+    /* ── Hero / Big Story ── */
+    .hero {
+      background: linear-gradient(160deg, #0d1b2a 0%, #1e293b 100%);
+      padding: 52px 0 44px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #f1f5f9;
+      max-width: 780px;
+      margin-bottom: 16px;
+    }
+    .hero-summary {
+      font-size: 1rem;
+      color: #94a3b8;
+      max-width: 720px;
+      margin-bottom: 22px;
+    }
+    .hero-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .hero-card {
+      background: #1e293b;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .hero-card:hover { border-color: #2563eb; transform: translateY(-2px); }
+    .hero-card-source {
+      font-size: 0.7rem;
+      color: #2563eb;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+    .hero-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .hero-card p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+    .hero-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .hero-card ul li {
+      font-size: 0.78rem;
+      color: #64748b;
+      padding: 3px 0 3px 14px;
+      position: relative;
+    }
+    .hero-card ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+    }
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 10px;
+    }
+    .read-more:hover { color: #60a5fa; }
+
+    /* ── Section ── */
+    .section {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .section-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .section-header h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #f1f5f9;
+    }
+    .section-header p {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    /* ── Card Grid ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 18px;
+    }
+    .card-grid.wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+
+    /* ── News Card ── */
+    .news-card {
+      background: #1a2233;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .news-card:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.15);
+    }
+    .card-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    .tag-oled { background: #1e3a5f; color: #60a5fa; }
+    .tag-microled { background: #1a3a2a; color: #34d399; }
+    .tag-ar { background: #2d1b4e; color: #a78bfa; }
+    .tag-market { background: #3a2a0a; color: #fbbf24; }
+    .tag-product { background: #3a1a1a; color: #f87171; }
+    .tag-research { background: #1a3a3a; color: #22d3ee; }
+    .tag-auto { background: #2a2a1a; color: #d4d400; }
+    .tag-qd { background: #3a1a3a; color: #e879f9; }
+
+    .news-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.7rem;
+      color: #475569;
+      margin-bottom: 10px;
+    }
+    .card-meta .dot { width: 3px; height: 3px; background: #475569; border-radius: 50%; }
+    .news-card p {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 14px;
+    }
+    .key-points {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+      border-top: 1px solid #2d3748;
+      padding-top: 12px;
+    }
+    .key-points li {
+      font-size: 0.77rem;
+      color: #64748b;
+      padding: 3px 0 3px 16px;
+      position: relative;
+    }
+    .key-points li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-size: 0.65rem;
+      top: 5px;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .source-badge {
+      font-size: 0.7rem;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    /* ── Numbers of the Week ── */
+    .numbers-section {
+      background: linear-gradient(135deg, #0d1b2a, #1a2744);
+      border-top: 1px solid #1e293b;
+      border-bottom: 1px solid #1e293b;
+      padding: 44px 0;
+    }
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .number-card {
+      background: #1e293b;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .number-card .big-num {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #60a5fa;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .number-card .num-label {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      line-height: 1.4;
+    }
+    .number-card .num-context {
+      font-size: 0.68rem;
+      color: #475569;
+      margin-top: 6px;
+    }
+
+    /* ── Coming Up ── */
+    .coming-up-section {
+      padding: 44px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+    .events-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .event-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #1a2233;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+    .event-date {
+      background: #2563eb;
+      color: #fff;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-align: center;
+      min-width: 80px;
+      flex-shrink: 0;
+    }
+    .event-info h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 4px;
+    }
+    .event-info p {
+      font-size: 0.78rem;
+      color: #64748b;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #0a0f1a;
+      border-top: 1px solid #1e293b;
+      padding: 32px 0;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 0.78rem;
+      color: #475569;
+      margin-bottom: 6px;
+    }
+    .footer strong { color: #64748b; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .hero h2 { font-size: 1.4rem; }
+      .masthead-meta { display: none; }
+      .topnav a { padding: 10px 12px; font-size: 0.72rem; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <!-- ══ BACK TO ARCHIVE BUTTON ══ -->
+  <div style="background:#0d1b2a;border-bottom:1px solid #1e293b;padding:10px 0;">
+    <div style="max-width:1100px;margin:0 auto;padding:0 20px;">
+      <a href="display-world-weekly-2026-index.html"
+         style="display:inline-flex;align-items:center;gap:6px;
+                font-size:12px;font-weight:700;color:#60a5fa;text-decoration:none;">
+        ← Back to 2026 Archive
+      </a>
+    </div>
+  </div>
+  <!-- ══ END BACK BUTTON ══ -->
+
+
+<!-- ══════════════════════════════════════════
+     MASTHEAD
+══════════════════════════════════════════ -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="masthead-logo">
+      <div class="logo-icon">🖥</div>
+      <div class="logo-text">
+        <h1>Display World Weekly</h1>
+        <span>The display industry, every week</span>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <strong>March 8, 2026</strong>
+      Week of Mar 2 – Mar 8, 2026
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     TOP NAVIGATION
+══════════════════════════════════════════ -->
+<nav class="topnav">
+  <div class="container topnav-inner">
+    <a href="#big-story">⚡ Big Story</a>
+    <a href="#tech-spotlight">🔬 Tech Spotlight</a>
+    <a href="#market">📈 Market Moves</a>
+    <a href="#products">🛍 Products</a>
+    <a href="#research">🧪 Research</a>
+    <a href="#automotive">🚗 Automotive</a>
+    <a href="#arvr">🥽 AR / VR / XR</a>
+    <a href="#numbers">📊 Numbers</a>
+    <a href="#coming-up">📅 Coming Up</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO — THE BIG STORY
+══════════════════════════════════════════ -->
+<section class="hero" id="big-story">
+  <div class="container">
+    <div class="hero-label">⚡ The Big Story</div>
+    <h2>Screens Steal the Show at MWC 2026 — AI Needs a Display to Exist</h2>
+    <p class="hero-summary">
+      Mobile World Congress 2026 made one thing clear: the display is no longer just an output device — it is the intelligent interface through which AI becomes usable. Samsung Display, TCL, and Apple all made major moves this week, redefining what a screen can do.
+    </p>
+    <div class="hero-cards">
+
+      <div class="hero-card">
+        <div class="hero-card-source">Samsung Display · Mar 2, 2026</div>
+        <h3>"AI Realized Through Display" — Samsung Showcases AI-Optimized OLED at MWC26</h3>
+        <p>Samsung Display unveiled its "The IQ Era" vision at MWC26, presenting AI-optimized OLED technologies including panel-integrated privacy screens, free-form OLEDs for AI visualization, and ultra-high-resolution OLEDoS at 5,000 PPI for Mixed Reality.</p>
+        <ul>
+          <li>Flex Magic Pixel™ — panel-integrated privacy for smartphones</li>
+          <li>5,000 PPI RGB OLEDoS for immersive Mixed Reality</li>
+          <li>Bezel-less OLED Wall with ultra-slim bezel technology</li>
+          <li>Concept products: circular OLED "Mini PetBot" and flexible "AI Toy House"</li>
+        </ul>
+        <a class="read-more" href="https://www.businesswire.com/news/home/20260302733703/en/AI-Realized-Through-Display-Samsung-Display-Showcases-AI-Optimized-OLED-Technologies-at-MWC26" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Euronews · Mar 6, 2026</div>
+        <h3>Beyond the AI Hype: Why the Screen is the Hero of MWC 2026</h3>
+        <p>TCL positioned screens as the central interface for AI at MWC 2026, showcasing its SQD-Mini LED TVs and the groundbreaking integration of NXTPAPER technology into AMOLED panels for natural-light visual comfort on mobile devices.</p>
+        <ul>
+          <li>World's No. 1 Mini LED brand — 153% YoY growth in Mini LED shipments</li>
+          <li>NXTPAPER + AMOLED: paper-like comfort with OLED vibrancy</li>
+          <li>TCL provided 330+ screens for the 2026 Winter Olympics</li>
+          <li>Potential Sony–TCL joint venture announced</li>
+        </ul>
+        <a class="read-more" href="https://www.euronews.com/next/2026/03/06/beyond-the-ai-hype-why-the-screen-is-the-hero-of-mwc-2026" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Apple Newsroom · Mar 3, 2026</div>
+        <h3>Apple Unveils New Studio Display and All-New Studio Display XDR</h3>
+        <p>Apple announced the Studio Display and Studio Display XDR — a 27-inch 5K Retina XDR panel with mini-LED backlight, 2,000 nits peak HDR brightness, 120 Hz refresh rate, and new DICOM medical imaging presets for diagnostic radiology.</p>
+        <ul>
+          <li>Studio Display XDR: 5K, mini-LED, 2,000 nits, 120 Hz, Thunderbolt 5</li>
+          <li>Adobe RGB and P3 color gamut support for pro workflows</li>
+          <li>New DICOM presets for medical imaging professionals</li>
+          <li>Studio Display from $1,599 · XDR from $3,299 · Ships March 11</li>
+        </ul>
+        <a class="read-more" href="https://www.apple.com/newsroom/2026/03/apple-unveils-new-studio-display-and-all-new-studio-display-xdr/" target="_blank">Read full story →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TECHNOLOGY SPOTLIGHT
+══════════════════════════════════════════ -->
+<section class="section" id="tech-spotlight">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e3a5f;">🔬</div>
+      <div>
+        <h2>Technology Spotlight</h2>
+        <p>Deep dives into OLED, MicroLED, Micro-OLED, and Quantum Dot advances</p>
+      </div>
+    </div>
+    <div class="card-grid wide">
+
+      <div class="news-card">
+        <span class="card-tag tag-microled">MicroLED</span>
+        <h3>Micro LED Display Revenue to Double to $105 Million in 2026</h3>
+        <div class="card-meta">
+          <span>Content + Technology</span><span class="dot"></span><span>Mar 4, 2026</span>
+        </div>
+        <p>Micro LED display revenue is forecast to surge from $52.4 million in 2025 to $105.4 million in 2026, driven by maturing mass transfer technologies, improved backplane yield, and rapid growth in LEDoS (Micro LED on Silicon) for near-eye applications.</p>
+        <ul class="key-points">
+          <li>Revenue doubling driven by manufacturing maturity and new product adoption</li>
+          <li>LEDoS enabling ultra-small, ultra-high-PPI displays for AR/VR/MR</li>
+          <li>Key remaining hurdles: electro-optical variability and mass transfer cost</li>
+          <li>Strongest near-term markets: ultra-large displays, automotive, transparent, stretchable</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Content + Technology</span>
+          <a class="read-more" href="https://content-technology.com/media-business/micro-led-display-revenue-to-double-to-105-million-in-2026/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">Micro-OLED</span>
+        <h3>Pico "Project Swan" Headset to Feature 4,000 PPI Micro-OLED Panels</h3>
+        <div class="card-meta">
+          <span>UploadVR</span><span class="dot"></span><span>Mar 2, 2026</span>
+        </div>
+        <p>ByteDance's Pico officially revealed key specs for its upcoming "Project Swan" XR headset, headlined by 4,000 PPI micro-OLED panels delivering 40–45 pixels per degree — a significant leap in near-eye display density that directly addresses the screen-door effect.</p>
+        <ul class="key-points">
+          <li>4,000 PPI micro-OLED panels — 40 PPD average, 45 PPD peak angular resolution</li>
+          <li>Dual-chip architecture with self-developed CV/image processing coprocessor (~12 ms latency)</li>
+          <li>Main SoC: 2× CPU and GPU performance vs. Snapdragon XR2 Gen 2</li>
+          <li>Pico OS 6: 2D and 3D apps coexist in a shared spatial environment</li>
+          <li>Expected launch: later in 2026</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">UploadVR</span>
+          <a class="read-more" href="https://www.uploadvr.com/pico-project-swan-official-display-compute-specs-announcement/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-qd">QD-OLED</span>
+        <h3>SEMES Ships First Gen-8 Inkjet System for QD-OLED — "Vincent"</h3>
+        <div class="card-meta">
+          <span>The Elec</span><span class="dot"></span><span>Mar 3, 2026</span>
+        </div>
+        <p>SEMES Co. has delivered its first eighth-generation (2500×2200 mm) inkjet printing system, named "Vincent," for quantum-dot color filter deposition in QD-OLED panels. This marks South Korea's first domestically developed Gen-8 inkjet tool for large OLED manufacturing.</p>
+        <ul class="key-points">
+          <li>Gen-8 substrate size: 2500×2200 mm — enables larger panel cuts</li>
+          <li>Over 100 inkjet heads; achieves ~220 PPI — a 30% resolution improvement</li>
+          <li>First South Korean domestic tool for this critical QD-OLED process step</li>
+          <li>Inkjet processing reduces material waste and simplifies manufacturing vs. evaporation</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">The Elec</span>
+          <a class="read-more" href="https://www.thelec.net/news/articleView.html?idxno=5644" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">Circuit Design</span>
+        <h3>12-Bit 200 MS/s DAC with Novel Calibration Scheme for Microdisplay Drivers</h3>
+        <div class="card-meta">
+          <span>MDPI Electronics</span><span class="dot"></span><span>Mar 6, 2026</span>
+        </div>
+        <p>A new paper presents a 200 MS/s 12-bit current-steering DAC for high-resolution microdisplay drivers, introducing a Split–Sort–Symmetric Grouping Calibration (SSSGC) scheme to reduce current-source mismatch and improve static linearity without complex compensation loops.</p>
+        <ul class="key-points">
+          <li>SSSGC scheme reduces high-weight current source mismatch — no complex loops needed</li>
+          <li>Group-domain Dynamic Element Matching (DEM) suppresses harmonic distortion</li>
+          <li>Achieved INL: 0.79 LSB · DNL: 0.42 LSB · SFDR: 74.9 dB at 4.05 MHz output</li>
+          <li>Applicable to LCoS, micro-OLED, and micro-LED display drivers</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MDPI Electronics</span>
+          <a class="read-more" href="https://www.mdpi.com/2079-9292/15/5/1102" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MARKET & INDUSTRY MOVES
+══════════════════════════════════════════ -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a2a0a;">📈</div>
+      <div>
+        <h2>Market &amp; Industry Moves</h2>
+        <p>Partnerships, investments, supply chain, and competitive dynamics</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Geopolitics</span>
+        <h3>US &amp; Japan Eye $13B Japan Display Factory on US Soil</h3>
+        <div class="card-meta">
+          <span>Reuters</span><span class="dot"></span><span>Mar 9, 2026</span>
+        </div>
+        <p>The US and Japan are reportedly negotiating a partnership with Japan Display Inc. (JDI) to build a new display manufacturing plant in the United States, part of Japan's $550 billion investment package. The project is valued at approximately $13 billion and aims to reduce Western dependence on Chinese display supply chains.</p>
+        <ul class="key-points">
+          <li>Estimated project value: ~$13 billion</li>
+          <li>Part of Japan's $550B US investment commitment</li>
+          <li>JDI shares surged 80% on the news</li>
+          <li>Strategic goal: reduce reliance on Chinese panel makers (BOE, CSOT)</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Reuters / Yahoo Finance</span>
+          <a class="read-more" href="https://finance.yahoo.com/news/us-japan-may-partner-japan-032154987.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Partnership</span>
+        <h3>Sony–TCL Joint Venture Announced to Strengthen Global Display Competitiveness</h3>
+        <div class="card-meta">
+          <span>Euronews / Multiple</span><span class="dot"></span><span>Mar 2026</span>
+        </div>
+        <p>A potential joint venture between Sony and TCL was announced in January and confirmed at MWC 2026, aiming to combine Sony's imaging and display expertise with TCL's manufacturing scale and Mini LED leadership to compete more effectively in global markets.</p>
+        <ul class="key-points">
+          <li>Combines Sony's display IP with TCL's manufacturing scale</li>
+          <li>TCL is the world's No. 1 Mini LED TV brand by shipments</li>
+          <li>JV targets both consumer and professional display segments</li>
+          <li>Strategic response to Samsung and LG's dominance in premium displays</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Euronews</span>
+          <a class="read-more" href="https://www.euronews.com/next/2026/03/06/beyond-the-ai-hype-why-the-screen-is-the-hero-of-mwc-2026" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Market Forecast</span>
+        <h3>Micro-Display Market to Reach $11.7B by 2031 at 25.7% CAGR</h3>
+        <div class="card-meta">
+          <span>QY Research</span><span class="dot"></span><span>Mar 3, 2026</span>
+        </div>
+        <p>The global micro-display market, valued at $2.2 billion in 2024, is projected to grow to $11.7 billion by 2031 at a compound annual growth rate of 25.7%. The primary growth driver is surging demand for VR/AR headsets, automotive HUDs, and wearable devices requiring ultra-high pixel density.</p>
+        <ul class="key-points">
+          <li>Market value: $2.2B (2024) → $11.7B (2031)</li>
+          <li>CAGR: 25.7% over 2025–2031</li>
+          <li>Key technologies: OLED-on-Silicon, LCoS, DLP</li>
+          <li>Micro-displays achieve >3,000 PPI, eliminating screen-door effect</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">QY Research / openPR</span>
+          <a class="read-more" href="https://www.openpr.com/news/4410677/the-tiny-screen-revolution-micro-display-market-poised" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PRODUCT LAUNCHES & REVIEWS
+══════════════════════════════════════════ -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a1a1a;">🛍</div>
+      <div>
+        <h2>Product Launches &amp; Reviews</h2>
+        <p>New displays shipping now or coming soon</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Monitor</span>
+        <h3>Apple Studio Display XDR — 5K Mini-LED, 2,000 nits, Ships March 11</h3>
+        <div class="card-meta">
+          <span>Apple Newsroom</span><span class="dot"></span><span>Mar 3, 2026</span>
+        </div>
+        <p>Apple's new Studio Display XDR brings a 27-inch 5K Retina XDR panel with mini-LED backlighting, 2,000 nits peak HDR brightness, 120 Hz ProMotion, and Thunderbolt 5 connectivity. New DICOM medical imaging presets make it the first Apple display targeting diagnostic radiology.</p>
+        <ul class="key-points">
+          <li>27" 5K (5120×2880) · mini-LED · 2,000 nits HDR · 120 Hz ProMotion</li>
+          <li>P3 and Adobe RGB color gamuts · 1,000,000:1 contrast ratio</li>
+          <li>Thunderbolt 5 · 12MP Center Stage camera · 6-speaker audio</li>
+          <li>DICOM presets for medical imaging — a first for Apple displays</li>
+          <li>Starts at $3,299 · Available March 11, 2026</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Apple Newsroom</span>
+          <a class="read-more" href="https://www.apple.com/newsroom/2026/03/apple-unveils-new-studio-display-and-all-new-studio-display-xdr/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Mobile / Tablet</span>
+        <h3>TCL NXTPAPER + AMOLED: Natural Light Display Concept Debuts at MWC</h3>
+        <div class="card-meta">
+          <span>PCMag</span><span class="dot"></span><span>Mar 2, 2026</span>
+        </div>
+        <p>TCL unveiled a "Natural Light" display concept at MWC 2026 that merges its NXTPAPER eye-care technology with AMOLED for the first time. The result is a 3,200-nit panel with 90% circular polarization to cut glare, 15% blue light reduction, and automatic ambient adjustment — available in the Tab A1 Plus Nxtpaper tablet.</p>
+        <ul class="key-points">
+          <li>3,200 nits brightness · 100% P3 color gamut</li>
+          <li>90% circular polarization rate — significant glare reduction</li>
+          <li>15% blue light reduction with auto brightness/color temperature</li>
+          <li>Tab A1 Plus Nxtpaper: Europe availability later in 2026</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">PCMag</span>
+          <a class="read-more" href="https://www.pcmag.com/news/tcls-new-screen-blends-nxtpaper-tech-with-amoled-mwc-2026" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Monitor</span>
+        <h3>BenQ MA270S — 5K Glossy Monitor Built for Mac, $999</h3>
+        <div class="card-meta">
+          <span>Yahoo Finance</span><span class="dot"></span><span>Mar 3, 2026</span>
+        </div>
+        <p>BenQ launched the MA270S, a 27-inch 5K (5120×2880) glossy monitor designed specifically for macOS users. It features a Nano Gloss panel, 99% P3 color, 500-nit brightness, 2000:1 contrast, and iKeyboard Control for seamless Mac integration — at a significantly lower price than Apple's own displays.</p>
+        <ul class="key-points">
+          <li>27" 5K (5120×2880) Nano Gloss IPS panel</li>
+          <li>500 nits · 99% P3 · 2000:1 contrast ratio</li>
+          <li>iKeyboard Control: adjust brightness/volume from MacBook keyboard</li>
+          <li>Compatible with MacBook, Mac Mini, Mac Studio, iMac, iPad</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Yahoo Finance / PR Newswire</span>
+          <a class="read-more" href="https://finance.yahoo.com/news/benq-launches-5k-glossy-monitor-130100077.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">AR Glasses</span>
+        <h3>TCL RayNeo Air 4 Pro AR Glasses — Micro-OLED, 201" Virtual Screen, $299</h3>
+        <div class="card-meta">
+          <span>Yahoo Tech</span><span class="dot"></span><span>Mar 3, 2026</span>
+        </div>
+        <p>TCL launched the RayNeo Air 4 Pro AR smart glasses featuring 0.6-inch micro-OLED displays at 1920×1080 with HDR10 support, capable of projecting a 201-inch virtual screen. At $299 (launch price $249), they represent one of the most aggressively priced micro-OLED AR glasses to date.</p>
+        <ul class="key-points">
+          <li>0.6" micro-OLED · 1920×1080 · up to 120 Hz refresh rate</li>
+          <li>1,200 nits brightness · HDR10 · 201" virtual screen</li>
+          <li>Vision 4000 processor · dual OLED architecture</li>
+          <li>$299 retail / $249 launch price — aggressive market positioning</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Yahoo Tech</span>
+          <a class="read-more" href="https://tech.yahoo.com/ar-vr/articles/tcl-releases-rayneo-air-4-100000562.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     RESEARCH & INNOVATION
+══════════════════════════════════════════ -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1a3a3a;">🧪</div>
+      <div>
+        <h2>Research &amp; Innovation</h2>
+        <p>R&amp;D breakthroughs, academic papers, and next-generation display science</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-research">IJP OLED</span>
+        <h3>TCL CSOT Builds World's First Gen-8.6 Inkjet-Printed OLED Production Line</h3>
+        <div class="card-meta">
+          <span>Newswire / CNW</span><span class="dot"></span><span>Mar 4, 2026</span>
+        </div>
+        <p>TCL CSOT unveiled its "Super Pixel Beyond Limits" R&D roadmap at MWC 2026, anchored by the world's first 8.6-generation inkjet-printed OLED (IJP OLED) production line (t8). IJP OLED simplifies manufacturing, reduces material waste, and enables ultra-thin and foldable form factors at lower cost than vacuum evaporation.</p>
+        <ul class="key-points">
+          <li>World's first Gen-8.6 IJP OLED production line under construction</li>
+          <li>Super Pixel tech: 25% power reduction, 40% faster refresh rates</li>
+          <li>New products: 14" ultra-thin rigid IJP OLED notebook display (world first)</li>
+          <li>28" foldable &amp; portable IJP OLED monitor display (world first)</li>
+          <li>APEX philosophy: 15,000 nits peak OLED, eye-health OLED, 45% power reduction OLED</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Newswire.ca</span>
+          <a class="read-more" href="https://www.newswire.ca/news-releases/tcl-csot-shapes-a-beyond-limits-future-for-displays-at-mwc-2026-823699788.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">Circuit Design</span>
+        <h3>Novel 12-Bit DAC Architecture Improves Microdisplay Driver Linearity</h3>
+        <div class="card-meta">
+          <span>MDPI Electronics</span><span class="dot"></span><span>Mar 6, 2026</span>
+        </div>
+        <p>Researchers published a 200 MS/s 12-bit current-steering DAC designed for high-resolution microdisplay drivers. The Split–Sort–Symmetric Grouping Calibration (SSSGC) scheme addresses current-source mismatch — a key challenge in driving high-PPI micro-OLED and micro-LED panels — without requiring complex feedback loops.</p>
+        <ul class="key-points">
+          <li>Problem: current-source mismatch degrades linearity in high-resolution display drivers</li>
+          <li>Solution: SSSGC reduces mismatch in high-weight sources; DEM suppresses harmonics</li>
+          <li>Results: INL 0.79 LSB · DNL 0.42 LSB · SFDR 74.9 dB</li>
+          <li>Applicable to LCoS, micro-OLED, and micro-LED driver ICs</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MDPI Electronics</span>
+          <a class="read-more" href="https://www.mdpi.com/2079-9292/15/5/1102" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     AUTOMOTIVE & SPECIALTY DISPLAYS
+══════════════════════════════════════════ -->
+<section class="section" id="automotive">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2a2a1a;">🚗</div>
+      <div>
+        <h2>Automotive &amp; Specialty Displays</h2>
+        <p>Dashboard OLED, HUDs, transparent displays, and specialty applications</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">HUD Market</span>
+        <h3>Automotive HUD Market to Reach $9.85B by 2034 — AR HUDs Lead Growth</h3>
+        <div class="card-meta">
+          <span>Facts &amp; Factors</span><span class="dot"></span><span>Mar 2026</span>
+        </div>
+        <p>The global automotive heads-up display market, valued at $2.18 billion in 2025, is projected to reach $9.85 billion by 2034 at a CAGR of 18.3%. Augmented reality HUDs are gaining dominance over conventional HUDs due to their ability to overlay navigation and safety data directly onto the driver's field of view.</p>
+        <ul class="key-points">
+          <li>Market: $2.18B (2025) → $9.85B (2034) at 18.3% CAGR</li>
+          <li>AR HUDs increasingly preferred for safety and usability benefits</li>
+          <li>Conventional HUDs still dominate volume but AR HUDs dominate value growth</li>
+          <li>Key drivers: ADAS adoption, EV dashboard redesigns, premium vehicle growth</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Facts &amp; Factors</span>
+          <a class="read-more" href="https://www.fnfresearch.com/automotive-heads-up-display-market" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">Transparent OLED</span>
+        <h3>Transparent OLED Touch Displays Deployed for Immersive Storytelling Installations</h3>
+        <div class="card-meta">
+          <span>The Record Herald</span><span class="dot"></span><span>Feb 17, 2026</span>
+        </div>
+        <p>Virtual On launched new 55" and 75" Transparent OLED Touch Displays, available as interactive kiosks or freestanding totems. Successfully deployed at the Motorsports Hall of Fame of America, these panels deliver vivid, high-contrast visuals with true transparency in any lighting condition.</p>
+        <ul class="key-points">
+          <li>Available in 55" and 75" sizes as kiosk or freestanding totem configurations</li>
+          <li>True transparency with high-contrast OLED visuals in all lighting conditions</li>
+          <li>Touch-enabled for interactive installations</li>
+          <li>Deployed at Motorsports Hall of Fame of America</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">The Record Herald</span>
+          <a class="read-more" href="https://www.therecordherald.com/press-release/story/32706/transparent-oled-touch-displays-redefine-immersive-storytelling/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">MicroLED Automotive</span>
+        <h3>JBD Launches "Griffin" — Automotive-Grade MicroLED Projection Platform</h3>
+        <div class="card-meta">
+          <span>JBD</span><span class="dot"></span><span>Mar 4, 2026</span>
+        </div>
+        <p>Jade Bird Display (JBD) introduced "Griffin," an automotive-grade MicroLED projection platform targeting near-eye displays and in-vehicle HUD applications. The first panel sample, "Griffin I," integrates hundreds of thousands of pixels in a 0.25-inch area and delivers up to 500 lumens, with samples available mid-2026.</p>
+        <ul class="key-points">
+          <li>0.25-inch display area with hundreds of thousands of pixels — extreme pixel density</li>
+          <li>Up to 500 lumens output — suitable for daylight-readable HUDs</li>
+          <li>Automotive-grade reliability and qualification</li>
+          <li>"Griffin I" samples available mid-2026</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">JBD</span>
+          <a class="read-more" href="https://www.jb-display.com/newsdetails/86.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     AR / VR / XR DISPLAY WATCH
+══════════════════════════════════════════ -->
+<section class="section" id="arvr">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2d1b4e;">🥽</div>
+      <div>
+        <h2>AR / VR / XR Display Watch</h2>
+        <p>Near-eye displays, waveguides, pancake lenses, and the XR headset race</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Smart Glasses</span>
+        <h3>Samsung XR Smart Glasses Coming in 2026 with Android XR — Full AR in 2027</h3>
+        <div class="card-meta">
+          <span>TechRadar</span><span class="dot"></span><span>Mar 7, 2026</span>
+        </div>
+        <p>A Samsung executive confirmed that XR smart glasses will launch in 2026 as part of the Android XR ecosystem developed with Google and Qualcomm. The 2026 model will feature an eye-level camera and require a smartphone tether; a second-generation model with full integrated displays is planned for 2027.</p>
+        <ul class="key-points">
+          <li>2026 model: eye-level camera, smartphone-tethered, lightweight form factor</li>
+          <li>Android XR platform developed with Google and Qualcomm</li>
+          <li>2027 model: full integrated displays — true AR glasses</li>
+          <li>Part of Samsung's broader XR ecosystem strategy alongside Galaxy XR headset</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">TechRadar</span>
+          <a class="read-more" href="https://www.techradar.com/computing/virtual-reality-augmented-reality/everybody-talks-about-whats-the-next-ai-device-glasses-obviously-is-one-of-them-samsung-exec-teases-details-about-its-forthcoming-xr-glasses-and-when-they-might-arrive" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Micro-OLED</span>
+        <h3>Pico Project Swan: 4,000 PPI Micro-OLED Sets New Bar for VR Display Density</h3>
+        <div class="card-meta">
+          <span>UploadVR</span><span class="dot"></span><span>Mar 2, 2026</span>
+        </div>
+        <p>Pico's Project Swan headset will use 4,000 PPI micro-OLED panels — among the highest pixel density ever announced for a consumer VR headset. At 40–45 pixels per degree, the display effectively eliminates the screen-door effect and approaches the angular resolution of human vision.</p>
+        <ul class="key-points">
+          <li>4,000 PPI micro-OLED — approaching human visual acuity limits</li>
+          <li>40 PPD average / 45 PPD peak — screen-door effect effectively eliminated</li>
+          <li>Competing directly with Apple Vision Pro's micro-OLED panels</li>
+          <li>Dual-chip architecture reduces latency to ~12 ms for CV processing</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">UploadVR</span>
+          <a class="read-more" href="https://www.uploadvr.com/pico-project-swan-official-display-compute-specs-announcement/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">MicroLED</span>
+        <h3>JBD "Griffin" MicroLED Platform Targets Automotive HUDs and Near-Eye Displays</h3>
+        <div class="card-meta">
+          <span>JBD</span><span class="dot"></span><span>Mar 4, 2026</span>
+        </div>
+        <p>JBD's new Griffin MicroLED projection platform is designed for both automotive HUDs and near-eye AR display applications. With 500 lumens output from a 0.25-inch chip, Griffin I represents a significant step toward practical MicroLED-based AR glasses that can function in outdoor daylight conditions.</p>
+        <ul class="key-points">
+          <li>500 lumens from 0.25" chip — sufficient for outdoor AR use cases</li>
+          <li>Dual application: automotive HUD and near-eye AR displays</li>
+          <li>MicroLED advantages over micro-OLED: higher brightness, longer lifetime</li>
+          <li>Samples available mid-2026 — commercial products expected 2027+</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">JBD</span>
+          <a class="read-more" href="https://www.jb-display.com/newsdetails/86.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     NUMBERS OF THE WEEK
+══════════════════════════════════════════ -->
+<section class="numbers-section" id="numbers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e3a5f;">📊</div>
+      <div>
+        <h2>Numbers of the Week</h2>
+        <p>Key figures, market data, and performance benchmarks</p>
+      </div>
+    </div>
+    <div class="numbers-grid">
+
+      <div class="number-card">
+        <div class="big-num">$105M</div>
+        <div class="num-label">Micro LED display revenue forecast for 2026</div>
+        <div class="num-context">Doubled from $52.4M in 2025 · Source: Content+Technology</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">4,000</div>
+        <div class="num-label">PPI of Pico Project Swan micro-OLED panels</div>
+        <div class="num-context">40–45 PPD angular resolution · Source: UploadVR</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">$13B</div>
+        <div class="num-label">Estimated value of proposed US–Japan Display factory</div>
+        <div class="num-context">Part of Japan's $550B US investment package · Source: Reuters</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">5,000</div>
+        <div class="num-label">PPI of Samsung Display's RGB OLEDoS for Mixed Reality</div>
+        <div class="num-context">Showcased at MWC26 · Source: BusinessWire</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">220 PPI</div>
+        <div class="num-label">Resolution of SEMES Gen-8 QD-OLED inkjet system</div>
+        <div class="num-context">30% improvement over previous equipment · Source: The Elec</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">25.7%</div>
+        <div class="num-label">Micro-display market CAGR through 2031</div>
+        <div class="num-context">$2.2B (2024) → $11.7B (2031) · Source: QY Research</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">18.3%</div>
+        <div class="num-label">Automotive HUD market CAGR through 2034</div>
+        <div class="num-context">$2.18B (2025) → $9.85B (2034) · Source: Facts &amp; Factors</div>
+      </div>
+
+      <div class="number-card">
+        <div class="big-num">153%</div>
+        <div class="num-label">YoY growth in TCL Mini LED TV model shipments</div>
+        <div class="num-context">2.24M Mini LED units in first 3 quarters of 2025 · Source: TCL</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     COMING UP
+══════════════════════════════════════════ -->
+<section class="coming-up-section" id="coming-up">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📅</div>
+      <div>
+        <h2>Coming Up</h2>
+        <p>Upcoming conferences, product launches, and events to watch</p>
+      </div>
+    </div>
+    <div class="events-list">
+
+      <div class="event-item">
+        <div class="event-date">Mar 11<br>2026</div>
+        <div class="event-info">
+          <h4>Apple Studio Display &amp; Studio Display XDR — On Sale</h4>
+          <p>Pre-orders open March 4. The new 5K mini-LED Studio Display XDR ships to customers starting March 11.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">Mar 11–12<br>2026</div>
+        <div class="event-info">
+          <h4>Electronic Displays Conference 2026 — Nuremberg, Germany</h4>
+          <p>Annual European conference covering display technologies, components, and applications.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">May 3–8<br>2026</div>
+        <div class="event-info">
+          <h4>SID Display Week 2026 — Los Angeles, California</h4>
+          <p>The world's premier display technology conference and exhibition. Expect major announcements from Samsung Display, LG Display, BOE, and leading research institutions.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">Jun 13–19<br>2026</div>
+        <div class="event-info">
+          <h4>InfoComm 2026 — Las Vegas, Nevada</h4>
+          <p>Leading AV and display integration trade show. Key venue for specialty, signage, and large-format display announcements.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">Jun 15–18<br>2026</div>
+        <div class="event-info">
+          <h4>AWE USA 2026 — Long Beach, California</h4>
+          <p>Augmented World Expo — the leading AR/VR/XR industry event. Key venue for near-eye display and smart glasses announcements.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">Mid-2026</div>
+        <div class="event-info">
+          <h4>JBD "Griffin I" MicroLED Panel Samples Available</h4>
+          <p>Jade Bird Display's automotive-grade MicroLED projection platform samples expected to reach customers for evaluation in mid-2026.</p>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">Sep 16–17<br>2026</div>
+        <div class="event-info">
+          <h4>MicroLED Connect + AR/VR Connect 2026 — Eindhoven, Netherlands</h4>
+          <p>Dedicated industry event for MicroLED and AR/VR display technology, bringing together manufacturers, researchers, and investors.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Display World Weekly</strong> — March 8, 2026</p>
+    <p>Covering the week of March 2–8, 2026 · All stories sourced from public news, industry publications, and academic journals.</p>
+    <p style="margin-top:12px; font-size:0.72rem;">
+      Sections: Big Story · Technology Spotlight · Market Moves · Products · Research · Automotive · AR/VR/XR · Numbers · Coming Up
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
