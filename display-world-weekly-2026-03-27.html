@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta property="og:title" content="Display World Weekly — March 27, 2026" />
+  <meta property="og:description" content="This week: LG Display's world-first 1–120Hz Oxide LCD laptop panel, stretchable OLEDs matching rigid performance, OLED monitor shipments surge 92%, Google Vibe Coding XR, and Meta's 2027 MicroLED AR glasses push." />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="Display World Weekly edition for the week of March 21–27, 2026. Covering OLED, MicroLED, AR/VR, automotive displays, market moves and research." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display World Weekly — March 27, 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0f1117; color: #e2e8f0; line-height: 1.65; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .masthead { background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 50%, #0d1b2a 100%); border-bottom: 2px solid #2563eb; padding: 28px 0 20px; position: sticky; top: 0; z-index: 100; }
+    .masthead-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .masthead-logo { display: flex; align-items: center; gap: 14px; }
+    .logo-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .logo-text h1 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.5px; color: #fff; }
+    .logo-text span { font-size: 0.75rem; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; }
+    .masthead-meta { text-align: right; font-size: 0.8rem; color: #64748b; }
+    .masthead-meta strong { color: #94a3b8; display: block; font-size: 0.85rem; }
+    .topnav { background: #0d1b2a; border-bottom: 1px solid #1e293b; padding: 0; overflow-x: auto; white-space: nowrap; }
+    .topnav-inner { display: flex; gap: 0; }
+    .topnav a { display: inline-block; padding: 11px 18px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px; color: #64748b; border-bottom: 3px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .topnav a:hover { color: #e2e8f0; border-color: #2563eb; }
+    .hero { background: linear-gradient(160deg, #0d1b2a 0%, #1e293b 100%); padding: 52px 0 44px; border-bottom: 1px solid #1e293b; }
+    .hero-label { display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 18px; }
+    .hero h2 { font-size: 2rem; font-weight: 800; line-height: 1.25; color: #f1f5f9; max-width: 780px; margin-bottom: 16px; }
+    .hero-summary { font-size: 1rem; color: #94a3b8; max-width: 720px; margin-bottom: 22px; }
+    .hero-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
+    .hero-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 20px; transition: border-color 0.2s, transform 0.2s; }
+    .hero-card:hover { border-color: #2563eb; transform: translateY(-2px); }
+    .hero-card-source { font-size: 0.7rem; color: #2563eb; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+    .hero-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; margin-bottom: 10px; line-height: 1.4; }
+    .hero-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.55; margin-bottom: 12px; }
+    .hero-card ul { list-style: none; padding: 0; }
+    .hero-card ul li { font-size: 0.78rem; color: #64748b; padding: 3px 0 3px 14px; position: relative; }
+    .hero-card ul li::before { content: '▸'; position: absolute; left: 0; color: #2563eb; }
+    .read-more { display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem; font-weight: 600; color: #2563eb; margin-top: 10px; }
+    .read-more:hover { color: #60a5fa; }
+    .section { padding: 48px 0 32px; border-bottom: 1px solid #1e293b; }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+    .section-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .section-header h2 { font-size: 1.2rem; font-weight: 800; color: #f1f5f9; }
+    .section-header p { font-size: 0.78rem; color: #64748b; margin-top: 2px; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+    .card-grid.wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+    .news-card { background: #1a2233; border: 1px solid #2d3748; border-radius: 12px; padding: 22px; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; }
+    .news-card:hover { border-color: #3b82f6; box-shadow: 0 4px 20px rgba(37,99,235,0.15); }
+    .card-tag { display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; margin-bottom: 10px; width: fit-content; }
+    .tag-oled { background: #1e3a5f; color: #60a5fa; }
+    .tag-microled { background: #1a3a2a; color: #34d399; }
+    .tag-ar { background: #2d1b4e; color: #a78bfa; }
+    .tag-market { background: #3a2a0a; color: #fbbf24; }
+    .tag-product { background: #3a1a1a; color: #f87171; }
+    .tag-research { background: #1a3a3a; color: #22d3ee; }
+    .tag-auto { background: #2a2a1a; color: #d4d400; }
+    .tag-lcd { background: #1a2a3a; color: #38bdf8; }
+    .news-card h3 { font-size: 0.95rem; font-weight: 700; color: #f1f5f9; line-height: 1.4; margin-bottom: 10px; }
+    .card-meta { display: flex; align-items: center; gap: 8px; font-size: 0.7rem; color: #475569; margin-bottom: 10px; }
+    .card-meta .dot { width: 3px; height: 3px; background: #475569; border-radius: 50%; }
+    .news-card p { font-size: 0.82rem; color: #94a3b8; line-height: 1.6; flex: 1; margin-bottom: 14px; }
+    .key-points { list-style: none; padding: 0; margin-bottom: 14px; border-top: 1px solid #2d3748; padding-top: 12px; }
+    .key-points li { font-size: 0.77rem; color: #64748b; padding: 3px 0 3px 16px; position: relative; }
+    .key-points li::before { content: '▸'; position: absolute; left: 0; color: #3b82f6; font-size: 0.65rem; top: 5px; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+    .source-badge { font-size: 0.7rem; color: #475569; font-weight: 600; }
+    .numbers-section { background: linear-gradient(135deg, #0d1b2a, #1a2744); border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b; padding: 44px 0; }
+    .numbers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; margin-top: 24px; }
+    .number-card { background: #1e293b; border: 1px solid #2d3748; border-radius: 12px; padding: 22px 18px; text-align: center; }
+    .number-card .big-num { font-size: 2rem; font-weight: 900; color: #60a5fa; line-height: 1.1; margin-bottom: 6px; }
+    .number-card .num-label { font-size: 0.75rem; color: #94a3b8; line-height: 1.4; }
+    .number-card .num-context { font-size: 0.68rem; color: #475569; margin-top: 6px; }
+    .coming-up-section { padding: 44px 0; border-bottom: 1px solid #1e293b; }
+    .events-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .event-item { display: flex; align-items: flex-start; gap: 16px; background: #1a2233; border: 1px solid #2d3748; border-radius: 10px; padding: 16px 20px; }
+    .event-date { background: #2563eb; color: #fff; border-radius: 8px; padding: 6px 12px; font-size: 0.72rem; font-weight: 700; text-align: center; min-width: 80px; flex-shrink: 0; }
+    .event-info h4 { font-size: 0.9rem; font-weight: 700; color: #f1f5f9; margin-bottom: 4px; }
+    .event-info p { font-size: 0.78rem; color: #64748b; }
+    .footer { background: #0a0f1a; border-top: 1px solid #1e293b; padding: 32px 0; text-align: center; }
+    .footer p { font-size: 0.78rem; color: #475569; margin-bottom: 6px; }
+    .footer strong { color: #64748b; }
+    @media (max-width: 640px) {
+      .hero h2 { font-size: 1.4rem; }
+      .masthead-meta { display: none; }
+      .topnav a { padding: 10px 12px; font-size: 0.72rem; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- BACK TO ARCHIVE -->
+<div style="background:#0d1b2a;border-bottom:1px solid #1e293b;padding:10px 0;">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px;">
+    <a href="index.html" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#60a5fa;text-decoration:none;">
+      ← Back to 2026 Archive
+    </a>
+  </div>
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="masthead-logo">
+      <div class="logo-icon">🖥</div>
+      <div class="logo-text">
+        <h1>Display World Weekly</h1>
+        <span>The display industry, every week</span>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <strong>March 27, 2026</strong>
+      Week of Mar 21 – Mar 27, 2026
+    </div>
+  </div>
+</header>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <div class="container topnav-inner">
+    <a href="#big-story">⚡ Big Story</a>
+    <a href="#tech-spotlight">🔬 Tech Spotlight</a>
+    <a href="#market">📈 Market Moves</a>
+    <a href="#products">🛍 Products</a>
+    <a href="#research">🧪 Research</a>
+    <a href="#automotive">🚗 Automotive</a>
+    <a href="#arvr">🥽 AR / VR / XR</a>
+    <a href="#numbers">📊 Numbers</a>
+    <a href="#coming-up">📅 Coming Up</a>
+  </div>
+</nav>
+
+<!-- HERO — THE BIG STORY -->
+<section class="hero" id="big-story">
+  <div class="container">
+    <div class="hero-label">⚡ The Big Story</div>
+    <h2>LG Display Mass-Produces World's First 1–120Hz Oxide LCD Laptop Panel — 48% Battery Saving</h2>
+    <p class="hero-summary">
+      The standout story of the week is LG Display's announcement that it has commenced the world's first mass production of a 1–120Hz variable refresh rate LCD panel for laptops, using its proprietary Oxide 1Hz technology. Debuting in Dell's 2026 XPS lineup, the panel can drop to 1Hz during static tasks to deliver up to 48% power savings — a milestone that brings LTPO-like efficiency to mainstream LCD for the first time.
+    </p>
+    <div class="hero-cards">
+
+      <div class="hero-card">
+        <div class="hero-card-source">Nasdaq / LG Display · Mar 21, 2026</div>
+        <h3>World's First 1–120Hz Oxide LCD for Laptops Enters Mass Production at LG Display</h3>
+        <p>LG Display has officially begun mass production of its Oxide 1Hz laptop panel — the world's first LCD capable of dynamically adjusting its refresh rate from 1Hz (for static content like documents and e-reading) all the way to 120Hz (for video and gaming). The technology uses low-leakage oxide TFTs and advanced circuit algorithms to achieve this range, delivering up to 48% improvement in battery life compared to standard 60Hz or 120Hz panels.</p>
+        <ul>
+          <li>World's first 1–120Hz variable refresh rate LCD for laptops</li>
+          <li>Oxide 1Hz technology: low-leakage TFT materials + advanced circuit algorithms</li>
+          <li>Up to 48% battery life improvement vs. standard laptop LCD panels</li>
+          <li>Debuting in Dell's 2026 XPS premium laptop series</li>
+          <li>LG plans to expand 1Hz capability to OLED laptop panels by 2027</li>
+        </ul>
+        <a class="read-more" href="https://www.nasdaq.com/press-release/lg-display-becomes-worlds-first-mass-produce-1-120hz-laptop-panel-2026-03-21" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">TrendForce · Mar 26, 2026</div>
+        <h3>OLED Monitor Shipments Surge 92% in 2025 — ASUS Takes Market Lead</h3>
+        <p>Global OLED monitor shipments reached 2.735 million units in 2025, a 92% year-on-year increase, driven by aggressive Q4 promotions and surging demand for 27-inch 240Hz QHD models. ASUS secured market leadership, and the introduction of new 280Hz models is expected to sustain momentum into 2026. The data underscores OLED's rapid displacement of IPS LCD in the premium gaming and professional monitor segment.</p>
+        <ul>
+          <li>2.735 million OLED monitors shipped in 2025 — up 92% year-on-year</li>
+          <li>27-inch 240Hz QHD: the dominant form factor driving growth</li>
+          <li>ASUS secured No. 1 market share position in 2025</li>
+          <li>New 280Hz models launching in 2026 to sustain growth</li>
+        </ul>
+        <a class="read-more" href="https://www.trendforce.com/presscenter/news/20260326-12068.html" target="_blank">Read full story →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-source">Samsung Newsroom · Mar 26, 2026</div>
+        <h3>Samsung Spatial Signage and Phytoplankton-Based Color E-Paper Unveiled</h3>
+        <p>Samsung Electronics unveiled two landmark commercial display innovations this week: Samsung Spatial Signage — a 52mm-slim panel delivering glasses-free 3D content for retail and hospitality — and a 13-inch Color E-Paper display using the world's first phytoplankton-based bio-resin housing, reducing manufacturing carbon emissions by over 40%. Both products reflect Samsung's dual focus on immersive experiences and sustainable manufacturing.</p>
+        <ul>
+          <li>Spatial Signage: 52mm slim, glasses-free 3D — CES 2026 Innovation Award winner</li>
+          <li>Color E-Paper: world-first phytoplankton bio-resin housing — 40%+ carbon reduction</li>
+          <li>Upcoming 130-inch Micro RGB (MicroLED) signage model (QPHX) teased</li>
+          <li>17th consecutive year as global commercial display market leader</li>
+        </ul>
+        <a class="read-more" href="https://news.samsung.com/global/samsung-retains-no-1-position-in-global-commercial-displays-market-for-17th-consecutive-year" target="_blank">Read full story →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY SPOTLIGHT -->
+<section class="section" id="tech-spotlight">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e3a5f;">🔬</div>
+      <div>
+        <h2>Technology Spotlight</h2>
+        <p>Deep dives into OLED, MicroLED, LCD, and display technology advances</p>
+      </div>
+    </div>
+    <div class="card-grid wide">
+
+      <div class="news-card">
+        <span class="card-tag tag-lcd">LCD / Oxide TFT</span>
+        <h3>LG Display's Oxide 1Hz: How Low-Leakage TFTs Bring LTPO-Like Efficiency to LCD</h3>
+        <div class="card-meta"><span>LG Display / Nasdaq</span><span class="dot"></span><span>Mar 21, 2026</span></div>
+        <p>LG Display's Oxide 1Hz technology achieves variable refresh rate down to 1Hz on an LCD panel by combining low-power-leakage oxide thin-film transistors with proprietary circuit algorithms that maintain image stability at ultra-low refresh rates. Previously, this capability was exclusive to LTPO OLED panels in premium smartphones. By bringing it to LCD, LG enables laptop manufacturers to offer LTPO-like battery efficiency at a lower cost and with the brightness advantages of LCD.</p>
+        <ul class="key-points">
+          <li>Low-leakage oxide TFTs maintain pixel charge at 1Hz without image degradation</li>
+          <li>Circuit algorithms compensate for TFT variability at ultra-low refresh rates</li>
+          <li>First time LTPO-like VRR efficiency achieved on a laptop-class LCD panel</li>
+          <li>Roadmap: 1Hz capability coming to OLED laptop panels in 2027</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">LG Display / Nasdaq</span>
+          <a class="read-more" href="https://www.nasdaq.com/press-release/lg-display-becomes-worlds-first-mass-produce-1-120hz-laptop-panel-2026-03-21" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-oled">OLED</span>
+        <h3>Samsung Spatial Signage: Glasses-Free 3D in a 52mm Commercial Display</h3>
+        <div class="card-meta"><span>Samsung Newsroom</span><span class="dot"></span><span>Mar 26, 2026</span></div>
+        <p>Samsung's new Spatial Signage product uses a lenticular lens array over an OLED panel to deliver glasses-free 3D content in a 52mm-thin commercial display form factor. The system won a CES 2026 Innovation Award and is targeted at retail, hospitality, and premium brand environments where immersive, attention-grabbing content is critical. The 52mm profile makes it compatible with standard commercial display mounting systems.</p>
+        <ul class="key-points">
+          <li>Lenticular lens over OLED — glasses-free 3D for commercial environments</li>
+          <li>52mm slim profile — compatible with standard commercial display mounts</li>
+          <li>CES 2026 Innovation Award winner</li>
+          <li>Target markets: retail, hospitality, luxury brand activations</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Samsung Newsroom</span>
+          <a class="read-more" href="https://news.samsung.com/global/samsung-retains-no-1-position-in-global-commercial-displays-market-for-17th-consecutive-year" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MARKET MOVES -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a2a0a;">📈</div>
+      <div>
+        <h2>Market &amp; Industry Moves</h2>
+        <p>Partnerships, investments, supply chain, and competitive dynamics</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Panel Pricing</span>
+        <h3>LCD TV Panel Prices Rise in March 2026 as Supply Discipline Holds — But DDIC Costs Loom</h3>
+        <div class="card-meta"><span>Omdia / TrendForce</span><span class="dot"></span><span>Mar 25–27, 2026</span></div>
+        <p>LCD TV panel prices continued their upward trend in March 2026, following a cyclical low in December 2025, as panel manufacturers maintained disciplined production levels. However, Display Driver IC (DDIC) suppliers are now in talks with panel makers about price increases, driven by rising foundry and OSAT costs and precious metal price inflation — a headwind that could compress panel maker margins in H2 2026.</p>
+        <ul class="key-points">
+          <li>LCD TV panel prices trending up since December 2025 cyclical low</li>
+          <li>Supply discipline by panel makers enabling modest price hikes despite weak demand</li>
+          <li>DDIC suppliers initiating price increase discussions with panel makers</li>
+          <li>Rising foundry, OSAT, and precious metal costs driving DDIC cost pressure</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Omdia / TrendForce</span>
+          <a class="read-more" href="https://www.trendforce.com/presscenter/news/20260327-12069.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-market">Commercial Displays</span>
+        <h3>Samsung Holds 35.2% Global Commercial Display Share — 17th Consecutive Year at No. 1</h3>
+        <div class="card-meta"><span>Samsung Newsroom</span><span class="dot"></span><span>Mar 26, 2026</span></div>
+        <p>Samsung Electronics confirmed its 17th consecutive year as the global commercial display market leader, with a record 35.2% market share by unit sales and over 2.5 million units shipped in 2025. The company is now expanding its portfolio with Spatial Signage (3D), Color E-Paper (sustainable), and an upcoming 130-inch Micro RGB signage model to maintain its lead into 2027.</p>
+        <ul class="key-points">
+          <li>35.2% global commercial display market share by unit sales in 2025</li>
+          <li>2.5M+ units shipped — all-time annual record</li>
+          <li>New: Spatial Signage, Color E-Paper, and 130-inch Micro RGB (QPHX)</li>
+          <li>AI and cloud-based display management integrated across the portfolio</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Samsung Newsroom</span>
+          <a class="read-more" href="https://news.samsung.com/global/samsung-retains-no-1-position-in-global-commercial-displays-market-for-17th-consecutive-year" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#3a1a1a;">🛍</div>
+      <div>
+        <h2>Product Launches &amp; Reviews</h2>
+        <p>New displays shipping now or coming soon</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-product">TV</span>
+        <h3>Sony BRAVIA 3 II — Up to 100-inch, XR Processor, Four HDMI 2.1 Ports from $999</h3>
+        <div class="card-meta"><span>ScreenScribe</span><span class="dot"></span><span>Mar 26, 2026</span></div>
+        <p>Sony announced the BRAVIA 3 II, a new mid-tier TV available in sizes up to 100 inches, bringing the XR Processor and XR Triluminos Pro colour technology — previously reserved for premium models — to a more accessible price point. It is the first Sony TV to include four HDMI 2.1 ports with 4K 120Hz and VRR support, making it a versatile choice for both home cinema and gaming setups.</p>
+        <ul class="key-points">
+          <li>Up to 100-inch screen size — Sony's largest mid-tier offering</li>
+          <li>XR Processor + XR Triluminos Pro — premium image processing at mid-tier price</li>
+          <li>First Sony TV with four HDMI 2.1 ports — 4K 120Hz + VRR</li>
+          <li>New Inclusive Remote Control with tactile navigation and Remote Finder</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">ScreenScribe</span>
+          <a class="read-more" href="https://www.screenscribe.net/sony-to-launch-mega-mid-tier-tv/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-product">Laptop</span>
+        <h3>Apple MacBook Neo Review — $599 Liquid Retina Laptop Redefines the Budget Segment</h3>
+        <div class="card-meta"><span>MacRumors</span><span class="dot"></span><span>Mar 27, 2026</span></div>
+        <p>Apple's MacBook Neo, starting at $599 ($499 for students), features a 13-inch Liquid Retina display at 2408×1506 resolution and is powered by the A18 Pro chipset. Despite its entry-level price, it retains a premium aluminium chassis, a 1080p webcam, and two USB-C ports. Reviewers note that the Liquid Retina display delivers accurate sRGB colour and excellent brightness for its class, making it a compelling alternative to budget Windows laptops.</p>
+        <ul class="key-points">
+          <li>13-inch Liquid Retina display — 2408×1506, sRGB colour, high brightness</li>
+          <li>A18 Pro chipset — 8GB RAM, up to 512GB storage</li>
+          <li>Starting at $599 ($499 students) — Apple's most affordable laptop ever</li>
+          <li>Premium aluminium chassis, 1080p webcam, two USB-C ports</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MacRumors</span>
+          <a class="read-more" href="https://www.macrumors.com/2026/03/27/macbook-neo-review/" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1a3a3a;">🧪</div>
+      <div>
+        <h2>Research &amp; Innovation</h2>
+        <p>Academic papers, conference presentations, and R&amp;D breakthroughs</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-research">Hybrid Display</span>
+        <h3>Monolithic Micro-LED + OLED Integration Achieves 90.89% sRGB — No Mass Transfer Required</h3>
+        <div class="card-meta"><span>Displays Journal</span><span class="dot"></span><span>Mar 24, 2026</span></div>
+        <p>Researchers published a breakthrough hybrid display architecture in the journal <em>Displays</em>, integrating GaN-based blue Micro-LED arrays with red and green OLEDs on a single substrate — eliminating the need for mass transfer of all three colour channels. Through optimised KOH wet etching and ITO thickness tuning, the team achieved a 92.5% increase in blue Micro-LED luminance and 90.89% sRGB colour gamut coverage at 4.5V drive voltage.</p>
+        <ul class="key-points">
+          <li>Blue Micro-LED + red/green OLED on single substrate — no mass transfer needed</li>
+          <li>92.5% increase in blue Micro-LED luminance via KOH treatment optimisation</li>
+          <li>90.89% sRGB colour gamut at 4.5V — competitive with standalone OLED</li>
+          <li>Blue Micro-LED: 4.86 × 10⁴ cd/m² at 4.5V; green OLED: 87 cd/m² at 5V</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Displays Journal</span>
+          <a class="read-more" href="https://www.sciencedirect.com/science/article/abs/pii/S0141938226000739" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-research">Flexible OLED</span>
+        <h3>Stretchable OLEDs Match Rigid Device Performance — Nature Materials Breakthrough</h3>
+        <div class="card-meta"><span>Nature Materials / Argonne National Lab</span><span class="dot"></span><span>Mar 2026</span></div>
+        <p>A research team published a landmark study in <em>Nature Materials</em> demonstrating stretchable OLEDs that match the performance of rigid devices — a first in the field. By developing new stretchable electron transport layers (ETL) using a novel ETL polymer and liquid-metal AlGaIn cathode layers, the researchers enabled efficient electron injection even under significant mechanical deformation, opening the door to high-efficiency wearable and medical display applications.</p>
+        <ul class="key-points">
+          <li>First stretchable OLED to match rigid device efficiency metrics</li>
+          <li>Novel ETL polymer + liquid-metal AlGaIn cathode enables electron injection under strain</li>
+          <li>Published in Nature Materials — highest-impact materials science journal</li>
+          <li>Enables high-efficiency wearable, medical, and skin-conformable display applications</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Nature Materials</span>
+          <a class="read-more" href="https://www.anl.gov/cnm/article/breakthrough-in-stretchable-oled-technology-achieving-rigiddevice-performance-in-flexible-displays" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AUTOMOTIVE -->
+<section class="section" id="automotive">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2a2a1a;">🚗</div>
+      <div>
+        <h2>Automotive &amp; Specialty Displays</h2>
+        <p>Dashboard OLED, HUDs, transparent displays, and in-vehicle entertainment</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">AR HUD</span>
+        <h3>Basemark and Lucid Motors Integrate Next-Generation AR HUD into Lucid Gravity SUV</h3>
+        <div class="card-meta"><span>Automotive Testing Technology International</span><span class="dot"></span><span>Mar 26, 2026</span></div>
+        <p>Basemark and Lucid Motors announced a partnership to integrate a next-generation augmented reality head-up display into the Lucid Gravity SUV, using Basemark's Rocksolid HMI tools and a low-code AR SDK to implement Lucid's internal hardware and UX specifications. The system handles the high computational demands of real-time automotive AR, with future features to be delivered via over-the-air software updates.</p>
+        <ul class="key-points">
+          <li>Basemark Rocksolid HMI tools + AR SDK integrated into Lucid Gravity</li>
+          <li>Low-code toolkit enables rapid AR feature development and iteration</li>
+          <li>Handles high-computation real-time AR requirements for automotive use</li>
+          <li>Future AR features deliverable via OTA software updates</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Automotive Testing Tech Intl</span>
+          <a class="read-more" href="https://www.automotivetestingtechnologyinternational.com/news/interiors-infotainment-testing/next-generation-ar-hud-implemented-in-lucid-gravity.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-auto">Auto China 2026</span>
+        <h3>Marelli to Unveil HorizonView Pillar-to-Pillar Display and Ultra-Thin MiniLED at Auto China 2026</h3>
+        <div class="card-meta"><span>Marelli</span><span class="dot"></span><span>Mar 25, 2026</span></div>
+        <p>Global mobility technology supplier Marelli announced it will showcase over 20 innovations at the Beijing International Automotive Exhibition (Auto China 2026), including the next-generation HorizonView pillar-to-pillar display and an ultra-thin MiniLED cockpit display. The company is also debuting high-performance MicroLED headlamp technologies and flat lit surfaces, reinforcing the trend of display technology expanding from the dashboard to the full vehicle interior and exterior.</p>
+        <ul class="key-points">
+          <li>HorizonView: next-generation pillar-to-pillar display for full-width cockpit coverage</li>
+          <li>Ultra-thin MiniLED display for advanced cockpit integration</li>
+          <li>High-performance MicroLED headlamp technologies — display tech goes exterior</li>
+          <li>Design-Led Innovation strategy to accelerate time-to-market for global carmakers</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Marelli</span>
+          <a class="read-more" href="https://www.marelli.com/en/news/marelli-to-unveil-more-than-20-innovations-at-auto-china-2026.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AR/VR/XR -->
+<section class="section" id="arvr">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#2d1b4e;">🥽</div>
+      <div>
+        <h2>AR / VR / XR Display Watch</h2>
+        <p>Near-eye displays, waveguides, headsets, and spatial computing</p>
+      </div>
+    </div>
+    <div class="card-grid">
+
+      <div class="news-card">
+        <span class="card-tag tag-ar">Developer Tools</span>
+        <h3>Google Vibe Coding XR — Build a VR/AR App in Under 60 Seconds with Gemini AI</h3>
+        <div class="card-meta"><span>Android Headlines</span><span class="dot"></span><span>Mar 27, 2026</span></div>
+        <p>Google introduced Vibe Coding XR, an experimental AI-powered workflow that allows developers and non-developers alike to build functional VR and AR prototypes in under a minute using natural language prompts. The system leverages Gemini AI models and the open-source XR Blocks framework to assemble pre-built modules for physics, hand interactions, and spatial UI, optimised for the Android XR ecosystem and the Samsung Galaxy XR headset.</p>
+        <ul class="key-points">
+          <li>Gemini AI + XR Blocks framework — natural language to working XR prototype in &lt;60 seconds</li>
+          <li>Pre-built modules: physics, hand interactions, spatial UI — no 3D coding required</li>
+          <li>Optimised for Android XR ecosystem and Samsung Galaxy XR headset</li>
+          <li>Desktop Chrome simulation environment for broader developer accessibility</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">Android Headlines</span>
+          <a class="read-more" href="https://www.androidheadlines.com/2026/03/google-vibe-coding-xr-gemini-blocks.html" target="_blank">Read →</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <span class="card-tag tag-microled">MicroLED / AR</span>
+        <h3>Meta Accelerates MicroLED Microdisplay Mass Production for 2027 AR Glasses</h3>
+        <div class="card-meta"><span>MicroLED-Info</span><span class="dot"></span><span>Mar 2026</span></div>
+        <p>Meta is intensifying efforts to mass-produce MicroLED microdisplays for a new generation of AR glasses targeted for late 2027, actively recruiting advanced manufacturing engineers to oversee the production ramp-up of RGB MicroLED chips with key external partners — covering processes from epitaxy to end-of-line testing. The new displays are expected to replace the LCoS engines in current Ray-Ban models, with ams OSRAM and JBD cited as potential partners.</p>
+        <ul class="key-points">
+          <li>RGB MicroLED microdisplay production ramp targeting late 2027 AR glasses launch</li>
+          <li>Recruiting advanced manufacturing engineers for epitaxy-to-test production oversight</li>
+          <li>Expected to replace LCoS engines in current Meta Ray-Ban smart glasses</li>
+          <li>Potential partners: ams OSRAM, JBD — both leading MicroLED microdisplay suppliers</li>
+        </ul>
+        <div class="card-footer">
+          <span class="source-badge">MicroLED-Info</span>
+          <a class="read-more" href="https://www.microled-info.com/meta-gears-engage-microled-microdisplay-mass-production-towards-its-2027" target="_blank">Read →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS OF THE WEEK -->
+<section class="numbers-section" id="numbers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📊</div>
+      <div>
+        <h2>Numbers of the Week</h2>
+        <p>Key data points from the display industry this week</p>
+      </div>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-card">
+        <div class="big-num">1Hz</div>
+        <div class="num-label">World's first mass-produced LCD laptop panel minimum refresh rate</div>
+        <div class="num-context">LG Display Oxide 1Hz · Source: Nasdaq</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">48%</div>
+        <div class="num-label">Battery life improvement from LG Display's Oxide 1Hz laptop panel</div>
+        <div class="num-context">vs. standard laptop LCD · Source: LG Display</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">2.735M</div>
+        <div class="num-label">OLED monitor units shipped globally in 2025</div>
+        <div class="num-context">+92% year-on-year · Source: TrendForce</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">92%</div>
+        <div class="num-label">Year-on-year growth in global OLED monitor shipments in 2025</div>
+        <div class="num-context">Source: TrendForce</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">92.5%</div>
+        <div class="num-label">Increase in blue Micro-LED luminance via KOH optimisation</div>
+        <div class="num-context">Hybrid Micro-LED + OLED study · Source: Displays Journal</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">40%+</div>
+        <div class="num-label">Carbon emission reduction from Samsung's phytoplankton bio-resin E-Paper housing</div>
+        <div class="num-context">Source: Samsung Newsroom</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">$599</div>
+        <div class="num-label">Starting price of Apple MacBook Neo — Apple's most affordable laptop</div>
+        <div class="num-context">13-inch Liquid Retina · Source: MacRumors</div>
+      </div>
+      <div class="number-card">
+        <div class="big-num">100"</div>
+        <div class="num-label">Maximum screen size of the new Sony BRAVIA 3 II mid-tier TV</div>
+        <div class="num-context">Source: ScreenScribe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMING UP -->
+<section class="coming-up-section" id="coming-up">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-icon" style="background:#1e293b;">📅</div>
+      <div>
+        <h2>Coming Up</h2>
+        <p>Upcoming events, conferences, and product reveals in the display world</p>
+      </div>
+    </div>
+    <div class="events-list">
+      <div class="event-item">
+        <div class="event-date">Apr 3<br>2026</div>
+        <div class="event-info">
+          <h4>Display World Weekly — Edition 13</h4>
+          <p>Next edition covering the week of March 28 – April 3, 2026</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Apr 23–May 2<br>2026</div>
+        <div class="event-info">
+          <h4>Auto China 2026 — Beijing International Automotive Exhibition</h4>
+          <p>Marelli, Continental, and other tier-1 suppliers will unveil next-generation automotive display technologies including pillar-to-pillar displays, AR HUDs, and MicroLED headlamps.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">May 18–22<br>2026</div>
+        <div class="event-info">
+          <h4>SID Display Week 2026 — San Jose, CA</h4>
+          <p>The world's largest display technology conference. Expect major OLED, MicroLED, and AR/VR display announcements from all leading panel makers and research institutions.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Jun 14–20<br>2026</div>
+        <div class="event-info">
+          <h4>InfoComm 2026 — Las Vegas</h4>
+          <p>Pro AV and display technology show. Large-format displays, LED walls, and professional monitor launches.</p>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-date">Late 2027</div>
+        <div class="event-info">
+          <h4>Meta AR Glasses with MicroLED Microdisplay</h4>
+          <p>Meta's next-generation AR glasses featuring RGB MicroLED microdisplays — currently in production ramp-up with external partners. Expected to replace LCoS-based Ray-Ban models.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Display World Weekly</strong> — Edition 12 · March 27, 2026</p>
+    <p>Covering the week of March 21–27, 2026</p>
+    <p style="margin-top:12px;"><a href="index.html" style="color:#2563eb;font-weight:700;">← Back to 2026 Archive</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
